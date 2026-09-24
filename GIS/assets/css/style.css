@@ -639,9 +639,21 @@ ul {
 /* GIS illustration (About section) with an orbit ring and floating tool chips */
 .gis-visual {
   position: relative;
-  max-width: 540px;
+  width: 100%;
+  max-width: 480px;
   margin-inline: auto;
   padding: 28px;
+}
+
+/* soft brand glow behind the card */
+.gis-visual::after {
+  content: "";
+  position: absolute;
+  inset: 12%;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--primary) 28%, transparent), transparent 70%);
+  filter: blur(30px);
 }
 
 .gis-visual::before {
@@ -661,12 +673,18 @@ ul {
 
 .gis-card {
   position: relative;
-  padding: 22px;
-  border: 1px solid var(--line);
+  padding: 20px;
+  border: 1.5px solid transparent;
   border-radius: 28px;
-  background: #fff;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, color-mix(in srgb, var(--primary) 55%, transparent), var(--line) 45%, color-mix(in srgb, var(--accent) 55%, transparent)) border-box;
   box-shadow: var(--shadow-lg);
   animation: float 7s ease-in-out infinite;
+}
+
+.gis-card img {
+  border-radius: 14px;
 }
 
 @keyframes float {
@@ -796,7 +814,7 @@ ul {
 /* ---------- Sections ---------- */
 
 .section {
-  padding-block: 96px;
+  padding-block: clamp(72px, 9vw, 112px);
 }
 
 .section-alt {
@@ -883,6 +901,10 @@ ul {
     grid-template-columns: 1.1fr 1fr;
     gap: 56px;
   }
+}
+
+.about-copy .section-head {
+  margin-bottom: 24px;
 }
 
 .about-text p {
@@ -1025,7 +1047,7 @@ ul {
 .job {
   position: relative;
   display: grid;
-  grid-template-columns: 64px 1fr;
+  grid-template-columns: 72px 1fr;
   gap: 20px;
   padding: 26px;
   border: 1px solid var(--line);
@@ -1043,7 +1065,7 @@ ul {
 .job::before {
   content: "";
   position: absolute;
-  top: 34px;
+  top: 38px;
   inset-inline-start: -32px;
   width: 14px;
   height: 14px;
@@ -1097,19 +1119,26 @@ ul {
 .job-logo {
   display: grid;
   place-items: center;
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 14px;
+  border-radius: 18px;
   background: #fff;
+  box-shadow: 0 1px 2px rgba(15, 31, 30, 0.05), 0 6px 16px rgba(15, 31, 30, 0.07);
+  transition: transform 0.35s var(--ease), box-shadow 0.35s;
+}
+
+.job:hover .job-logo {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 10px 24px rgba(15, 31, 30, 0.12);
 }
 
 .job-logo img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 6px;
+  padding: 8px;
 }
 
 .job-logo.monogram {
@@ -1117,8 +1146,8 @@ ul {
   border: 0;
   color: #fff;
   font-weight: 800;
-  font-size: 18px;
-  letter-spacing: 0.02em;
+  font-size: 17px;
+  letter-spacing: 0.04em;
 }
 
 .job-head {
@@ -1182,13 +1211,26 @@ ul {
 .client {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  margin-top: 10px;
-  padding: 3px 10px;
-  border: 1px dashed var(--line);
-  border-radius: 8px;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 4px 12px 4px 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
   color: var(--muted);
   font-size: 13px;
+}
+
+[dir="rtl"] .client {
+  padding: 4px 4px 4px 12px;
+}
+
+.client img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: #fff;
 }
 
 .client b {
@@ -2049,12 +2091,12 @@ ul {
   gap: 12px;
 }
 
-/* ---------- Floating buttons ---------- */
+/* ---------- Back to top ---------- */
 
-.to-top,
-.wa-float {
+.to-top {
   position: fixed;
   bottom: 20px;
+  inset-inline-end: 20px;
   z-index: 40;
   display: grid;
   place-items: center;
@@ -2063,10 +2105,6 @@ ul {
   border-radius: 50%;
   box-shadow: var(--shadow-lg);
   transition: opacity 0.25s, transform 0.25s var(--ease), visibility 0.25s;
-}
-
-.to-top {
-  inset-inline-end: 20px;
   background: var(--primary);
   color: var(--on-primary);
   opacity: 0;
@@ -2085,29 +2123,16 @@ ul {
   background: var(--primary-hover);
 }
 
-.wa-float {
-  inset-inline-start: 20px;
-  background: #25d366;
-  color: #fff;
+
+/* ---------- Images fade in once loaded (only when JS is running) ---------- */
+
+.js img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.6s ease;
 }
 
-.wa-float:hover {
-  color: #fff;
-  transform: scale(1.08);
-}
-
-.wa-float::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  border: 2px solid #25d366;
-  animation: ping 2.4s var(--ease) infinite;
-}
-
-.wa-float .icon {
-  width: 26px;
-  height: 26px;
+.js img[loading="lazy"].is-loaded {
+  opacity: 1;
 }
 
 /* ---------- Reveal on scroll (only when JS is running) ---------- */
@@ -2125,6 +2150,14 @@ ul {
 
 [dir="rtl"].js .reveal.from-side {
   transform: translateX(36px);
+}
+
+/* on narrow screens slide up instead of sideways */
+@media (max-width: 899px) {
+  .js .reveal.from-side,
+  [dir="rtl"].js .reveal.from-side {
+    transform: translateY(28px);
+  }
 }
 
 .js .reveal.zoom {
@@ -2151,7 +2184,8 @@ ul {
 
   .js .reveal,
   .js .intro > *,
-  .js .skill-group.reveal .tags li {
+  .js .skill-group.reveal .tags li,
+  .js img[loading="lazy"] {
     opacity: 1;
     transform: none;
   }
@@ -2166,7 +2200,6 @@ ul {
 @media print {
   .site-header,
   .to-top,
-  .wa-float,
   .hero-actions,
   .scroll-cue,
   .quote,
@@ -2181,7 +2214,8 @@ ul {
 
   .js .reveal,
   .js .intro > *,
-  .js .skill-group.reveal .tags li {
+  .js .skill-group.reveal .tags li,
+  .js img[loading="lazy"] {
     opacity: 1;
     transform: none;
   }

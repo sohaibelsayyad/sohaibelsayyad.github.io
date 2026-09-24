@@ -90,6 +90,18 @@
     });
   }
 
+  // ---- Fade lazy images in once they have loaded ----
+  $$("img[loading=lazy]").forEach(function (img) {
+    var done = function () {
+      img.classList.add("is-loaded");
+    };
+    if (img.complete && img.naturalWidth) done();
+    else {
+      img.addEventListener("load", done);
+      img.addEventListener("error", done);
+    }
+  });
+
   // ---- Reveal on scroll ----
   $$(".tags").forEach(function (list) {
     $$("li", list).forEach(function (li, i) {
