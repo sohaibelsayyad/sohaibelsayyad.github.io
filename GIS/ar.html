@@ -53,6 +53,7 @@
   <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 3 3 6v15l6-3 6 3 6-3V3l-6 3-6-3z"/><path d="M9 3v15M15 6v15"/></symbol>
   <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="1.5"/></symbol>
   <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M10 21v-6h4v6"/><path d="M9 10h.01M15 10h.01"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16v-4M12 16V8M17 16v-7"/></symbol>
   <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
   <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
@@ -116,7 +117,7 @@
         <p class="coords"><span class="ping" aria-hidden="true"></span><span class="ltr">24.47° N, 39.61° E · Al Madinah</span></p>
         <h1>مرحبًا، أنا <span class="gradient-text">صهيب الصياد</span></h1>
         <p class="hero-role">
-          <span class="rotator" data-words='["أخصائي نظم المعلومات الجغرافية","محلل ومطور نظم معلومات جغرافية","أخصائي رسم خرائط","مساح عام محترف","مهندس مكتب فني"]'>أخصائي نظم المعلومات الجغرافية</span>
+          <span class="rotator" data-words='["أخصائي نظم المعلومات الجغرافية","مطور نظم معلومات جغرافية على الويب","محلل نظم معلومات جغرافية","محلل بيانات","أخصائي رسم خرائط","مساح عام محترف"]'>أخصائي نظم المعلومات الجغرافية</span>
         </p>
         <p class="hero-lead">
           أساعد مشاريع المياه والبنية التحتية في المملكة العربية السعودية على تحويل البيانات الميدانية
@@ -154,9 +155,10 @@
               وفي أعمال المكتب الفني.
             </p>
             <p>
-              أتمتع بمهارة في <strong>ArcGIS Pro و ArcGIS Online و AutoCAD Civil 3D</strong>، وعلى دراية جيدة
-              بلغات البرمجة لنظم المعلومات الجغرافية وبرمجة الويب، مع خبرة كبيرة في إدارة البيانات
-              وتحليلها باستخدام برامج Microsoft Office.
+              أتمتع بمهارة في <strong>ArcGIS Pro و ArcGIS Online و AutoCAD Civil 3D</strong>، وأطوّر
+              <strong>خرائط وتطبيقات نظم معلومات جغرافية على الويب</strong> باستخدام JavaScript، وأدير البيانات
+              المكانية في <strong>SQL Server</strong>، وأحلل البيانات وأؤتمت المهام باستخدام <strong>Python</strong>،
+              وأحوّل جميع أنواع البيانات إلى لوحات معلومات في <strong>Power BI</strong>.
             </p>
           </div>
         </div>
@@ -177,9 +179,23 @@
   <!-- Services -->
   <section class="section" id="services">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">02 — ماذا أقدم</span>
-        <h2>الخدمات</h2>
+      <div class="services-top">
+        <div class="section-head reveal">
+          <span class="eyebrow">02 — ماذا أقدم</span>
+          <h2>الخدمات</h2>
+          <p>من الموقع إلى المتصفح: بيانات مساحية، وقواعد بيانات مكانية، وخرائط ويب، ولوحات معلومات.</p>
+        </div>
+
+        <div class="gis-visual webgis reveal zoom" style="--d:.15s">
+          <span class="chip chip-1"><i></i>JavaScript</span>
+          <span class="chip chip-2"><i></i>SQL Server</span>
+          <span class="chip chip-3"><i></i>Power BI</span>
+          <span class="chip chip-4"><i></i>Python</span>
+          <div class="gis-card">
+            <img src="assets/img/webgis-illustration.svg" width="660" height="470" loading="lazy"
+                 alt="تطبيق نظم معلومات جغرافية على الويب يضم لوحة طبقات وخريطة تفاعلية ورسمًا بيانيًا وأكواد SQL و JavaScript">
+          </div>
+        </div>
       </div>
 
       <div class="cards">
@@ -189,20 +205,32 @@
           <h3>إنشاء وإدارة البيانات</h3>
           <p>إنشاء وتعديل ملفات shapefiles و feature classes و file geodatabases، وتحويل البيانات من صيغة إلى أخرى، وإدارة بيانات الأصول والبيانات الوصفية في مشاريع متعددة باستخدام ArcGIS.</p>
         </article>
-        <article class="card reveal" style="--d:.1s">
+        <article class="card reveal" style="--d:0.1s">
           <span class="card-num" aria-hidden="true">02</span>
           <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-map"/></svg></div>
-          <h3>رسم الخرائط وتحليلها</h3>
+          <h3>رسم الخرائط والتحليل المكاني</h3>
           <p>معالجة وتحليل البيانات الجغرافية المكانية (Raster و Vector) لدعم المهندسين، مع الاستعلام عن البيانات المكانية وإعداد التقارير والخرائط والرسوم البيانية.</p>
         </article>
-        <article class="card reveal" style="--d:.2s">
+        <article class="card reveal" style="--d:0.2s">
           <span class="card-num" aria-hidden="true">03</span>
+          <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></div>
+          <h3>تطوير خرائط الويب</h3>
+          <p>بناء خرائط تفاعلية وتطبيقات نظم معلومات جغرافية على الويب باستخدام JavaScript و HTML و CSS، مرتبطة ببيانات مكانية محدّثة وسهلة المشاركة بين الفرق.</p>
+        </article>
+        <article class="card reveal" style="--d:0s">
+          <span class="card-num" aria-hidden="true">04</span>
+          <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></div>
+          <h3>تحليل البيانات ولوحات المعلومات</h3>
+          <p>تحليل جميع أنواع البيانات باستخدام Python و SQL Server، وتحويلها إلى لوحات معلومات وتقارير Power BI تدعم اتخاذ القرار.</p>
+        </article>
+        <article class="card reveal" style="--d:0.1s">
+          <span class="card-num" aria-hidden="true">05</span>
           <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg></div>
           <h3>هندسة المساحة</h3>
           <p>أعمال الرفع والتوقيع المساحي ورفع الأعمال المنفذة باستخدام GPS و Total Station و Level، مع إعداد تقارير المساحة لاعتمادها من الاستشاري.</p>
         </article>
-        <article class="card reveal" style="--d:.3s">
-          <span class="card-num" aria-hidden="true">04</span>
+        <article class="card reveal" style="--d:0.2s">
+          <span class="card-num" aria-hidden="true">06</span>
           <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg></div>
           <h3>المكتب الفني</h3>
           <p>إعداد خطط المشاريع والمخططات والرسومات التنفيذية ومخططات الأعمال المنفذة باستخدام AutoCAD و Civil 3D، إلى جانب التقارير ووثائق التسليم والمستخلصات الشهرية.</p>
@@ -466,8 +494,19 @@
         <div class="skill-group reveal">
           <h3><svg class="icon" aria-hidden="true"><use href="#i-map"/></svg>نظم المعلومات الجغرافية والخرائط</h3>
           <ul class="tags">
-            <li class="core">ArcGIS Pro</li><li class="core">ArcMap</li><li>ArcGIS Online</li><li>QGIS</li>
-            <li>التحليل المكاني</li><li>الكارتوجرافيا</li><li>إدارة بيانات الأصول</li><li>Google Earth Pro</li><li>Google Maps</li>
+            <li class="core">ArcGIS Pro</li><li class="core">ArcMap</li><li>ArcGIS Online</li><li>QGIS</li><li>التحليل المكاني</li><li>الكارتوجرافيا</li><li>إدارة بيانات الأصول</li><li>Google Earth Pro</li><li>Google Maps</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal" style="--d:.1s">
+          <h3><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>تطوير GIS على الويب</h3>
+          <ul class="tags">
+            <li class="core">JavaScript</li><li class="core">تطوير خرائط الويب</li><li>تطبيقات GIS على الويب</li><li>HTML &amp; CSS</li><li>الخرائط التفاعلية</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg>البيانات والتحليلات</h3>
+          <ul class="tags">
+            <li class="core">SQL Server</li><li class="core">Python</li><li class="core">Power BI</li><li>تحليل البيانات</li><li>تمثيل البيانات بصريًا</li><li>إدارة البيانات</li><li>إدخال البيانات</li><li>Microsoft Office</li>
           </ul>
         </div>
         <div class="skill-group reveal" style="--d:.1s">
@@ -483,17 +522,11 @@
           </ul>
         </div>
         <div class="skill-group reveal" style="--d:.1s">
-          <h3><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>البيانات والبرمجة</h3>
+          <h3><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>اللغات</h3>
           <ul class="tags">
-            <li>Python</li><li>HTML &amp; CSS</li><li>إدارة البيانات</li><li>تحليل البيانات</li>
-            <li>تمثيل البيانات بصريًا</li><li>إدخال البيانات</li><li>Microsoft Office</li>
+            <li class="core">العربية · اللغة الأم</li><li>الإنجليزية · مستوى مهني</li>
           </ul>
         </div>
-      </div>
-
-      <div class="languages reveal">
-        <div class="lang"><strong>العربية</strong><span>اللغة الأم</span></div>
-        <div class="lang"><strong>الإنجليزية</strong><span>مستوى مهني</span></div>
       </div>
     </div>
   </section>

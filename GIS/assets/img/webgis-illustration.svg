@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 470" role="img" aria-labelledby="t">
+  <title id="t">Web GIS application: layers panel, interactive map, analytics chart and SQL / JavaScript code</title>
+  <defs>
+    <clipPath id="map"><rect x="150" y="60" width="470" height="340"/></clipPath>
+    <g id="pin">
+      <path d="M0 0c-9-10-14-17-14-24a14 14 0 0 1 28 0c0 7-5 14-14 24z" stroke="#2d2a3e" stroke-width="2.5" stroke-linejoin="round"/>
+      <circle cx="0" cy="-24" r="5" fill="#fff" stroke="#2d2a3e" stroke-width="2"/>
+    </g>
+  </defs>
+
+  <!-- browser window -->
+  <rect x="26" y="26" width="600" height="380" rx="18" fill="#2d2a3e" opacity=".12"/>
+  <rect x="20" y="20" width="600" height="380" rx="18" fill="#fff"/>
+
+  <!-- map -->
+  <g clip-path="url(#map)" stroke="#2d2a3e" stroke-width="2.5" stroke-linejoin="round">
+    <rect x="150" y="60" width="470" height="340" fill="#eef5f1" stroke="none"/>
+    <path d="M430 60c40 60 90 80 130 120 30 30 50 70 60 90V60z" fill="#7fd0da"/>
+    <path d="M470 60c26 36 60 56 92 84" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="6 7" opacity=".9"/>
+    <path d="M170 80l130-4 10 84-130 12z" fill="#f2c94c"/>
+    <path d="M300 76l120-6 10 80-120 10z" fill="#a9c66b"/>
+    <path d="M180 172l130-12 8 90-128 12z" fill="#f7d6b5"/>
+    <path d="M310 160l120-10 10 90-122 10z" fill="#f1998c"/>
+    <path d="M190 262l128-12 7 80-125 15z" fill="#c9b8e6"/>
+    <path d="M318 250l122-10 10 80-125 10z" fill="#a9c66b"/>
+    <path d="M440 240l90 6 60 70 30 84H450z" fill="#f2c94c"/>
+    <!-- contours on the green parcel -->
+    <g fill="none" stroke-width="1.8" opacity=".55">
+      <ellipse cx="365" cy="112" rx="42" ry="24"/>
+      <ellipse cx="368" cy="112" rx="27" ry="15"/>
+      <ellipse cx="371" cy="112" rx="12" ry="7"/>
+    </g>
+    <!-- hatch on the purple parcel -->
+    <g stroke-width="1.6" opacity=".45">
+      <path d="M205 330l40-60M230 334l40-62M255 331l40-62M280 328l34-52"/>
+    </g>
+    <!-- roads -->
+    <path d="M140 205c120-10 240-15 330 10s130 85 160 115" fill="none" stroke-width="14" stroke-linecap="round"/>
+    <path d="M140 205c120-10 240-15 330 10s130 85 160 115" fill="none" stroke="#e9a15b" stroke-width="8" stroke-linecap="round"/>
+    <path d="M312 50l14 360" fill="none" stroke-width="9"/>
+    <path d="M312 50l14 360" fill="none" stroke="#fff" stroke-width="4"/>
+    <!-- selected parcel -->
+    <path d="M310 160l120-10 10 90-122 10z" fill="none" stroke="#0d6b66" stroke-width="4" stroke-dasharray="10 6"/>
+  </g>
+  <!-- markers -->
+  <use href="#pin" x="248" y="132" fill="#e0604f"/>
+  <use href="#pin" x="372" y="222" fill="#0d6b66"/>
+  <use href="#pin" x="262" y="318" fill="#f2c94c"/>
+  <use href="#pin" x="520" y="300" fill="#e0604f"/>
+  <!-- popup -->
+  <g stroke="#2d2a3e" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M392 150h120a8 8 0 0 1 8 8v44a8 8 0 0 1-8 8h-96l-12 12-4-12h-8a8 8 0 0 1-8-8v-44a8 8 0 0 1 8-8z" fill="#fff"/>
+    <rect x="398" y="160" width="52" height="7" rx="3.5" fill="#0d6b66" stroke="none"/>
+    <rect x="398" y="174" width="100" height="6" rx="3" fill="#d9d3c7" stroke="none"/>
+    <rect x="398" y="186" width="78" height="6" rx="3" fill="#d9d3c7" stroke="none"/>
+  </g>
+  <!-- north arrow + scale bar -->
+  <g stroke="#2d2a3e" stroke-width="2" stroke-linejoin="round">
+    <circle cx="592" cy="92" r="16" fill="#fff"/>
+    <path d="M592 78l7 18-7-4-7 4z" fill="#2d2a3e"/>
+    <rect x="340" y="378" width="30" height="8" fill="#2d2a3e"/>
+    <rect x="370" y="378" width="30" height="8" fill="#fff"/>
+    <rect x="400" y="378" width="30" height="8" fill="#2d2a3e"/>
+  </g>
+
+  <!-- sidebar (layers) -->
+  <path d="M20 60h130v340H38a18 18 0 0 1-18-18z" fill="#fbf8f2"/>
+  <g stroke="#2d2a3e" stroke-width="2">
+    <rect x="34" y="78" width="70" height="8" rx="4" fill="#2d2a3e" stroke="none"/>
+    <rect x="34" y="102" width="14" height="14" rx="3" fill="#f2c94c"/>
+    <rect x="34" y="128" width="14" height="14" rx="3" fill="#a9c66b"/>
+    <rect x="34" y="154" width="14" height="14" rx="3" fill="#f1998c"/>
+    <rect x="34" y="180" width="14" height="14" rx="3" fill="#7fd0da"/>
+    <rect x="34" y="206" width="14" height="14" rx="3" fill="#e9a15b"/>
+    <rect x="34" y="232" width="14" height="14" rx="3" fill="#c9b8e6"/>
+  </g>
+  <g fill="#d9d3c7">
+    <rect x="56" y="105" width="62" height="8" rx="4"/>
+    <rect x="56" y="131" width="50" height="8" rx="4"/>
+    <rect x="56" y="157" width="70" height="8" rx="4"/>
+    <rect x="56" y="183" width="44" height="8" rx="4"/>
+    <rect x="56" y="209" width="58" height="8" rx="4"/>
+    <rect x="56" y="235" width="48" height="8" rx="4"/>
+  </g>
+  <g stroke="#2d2a3e" stroke-width="2">
+    <rect x="34" y="270" width="100" height="12" rx="6" fill="#eef5f1"/>
+    <rect x="34" y="270" width="64" height="12" rx="6" fill="#0d6b66"/>
+  </g>
+
+  <!-- title bar -->
+  <path d="M38 20h564a18 18 0 0 1 18 18v22H20V38a18 18 0 0 1 18-18z" fill="#f4efe6"/>
+  <circle cx="44" cy="40" r="5.5" fill="#e0604f" stroke="#2d2a3e" stroke-width="2"/>
+  <circle cx="63" cy="40" r="5.5" fill="#f2c94c" stroke="#2d2a3e" stroke-width="2"/>
+  <circle cx="82" cy="40" r="5.5" fill="#a9c66b" stroke="#2d2a3e" stroke-width="2"/>
+  <rect x="112" y="30" width="250" height="20" rx="10" fill="#fff" stroke="#2d2a3e" stroke-width="2"/>
+  <rect x="124" y="37" width="110" height="6" rx="3" fill="#d9d3c7"/>
+
+  <!-- window outline + dividers on top -->
+  <g fill="none" stroke="#2d2a3e" stroke-width="3">
+    <rect x="20" y="20" width="600" height="380" rx="18"/>
+    <path d="M20 60h600M150 60v340"/>
+  </g>
+
+  <!-- analytics card -->
+  <rect x="458" y="306" width="190" height="150" rx="16" fill="#2d2a3e" opacity=".12"/>
+  <g stroke="#2d2a3e" stroke-width="2.5" stroke-linejoin="round">
+    <rect x="452" y="300" width="190" height="150" rx="16" fill="#fff" stroke-width="3"/>
+    <rect x="468" y="316" width="70" height="8" rx="4" fill="#2d2a3e" stroke="none"/>
+    <circle cx="614" cy="322" r="12" fill="#fff"/>
+    <path d="M614 310a12 12 0 0 1 11.4 15.7L614 322z" fill="#e0604f"/>
+    <path d="M466 432h162" fill="none"/>
+    <rect x="474" y="392" width="18" height="40" rx="3" fill="#7fd0da"/>
+    <rect x="500" y="368" width="18" height="64" rx="3" fill="#f2c94c"/>
+    <rect x="526" y="380" width="18" height="52" rx="3" fill="#a9c66b"/>
+    <rect x="552" y="352" width="18" height="80" rx="3" fill="#e9a15b"/>
+    <rect x="578" y="372" width="18" height="60" rx="3" fill="#f1998c"/>
+    <rect x="604" y="360" width="18" height="72" rx="3" fill="#0d6b66"/>
+    <path d="M483 378l26-20 26 10 26-26 26 16 26-14" fill="none" stroke="#0d6b66" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- code card -->
+  <rect x="6" y="330" width="220" height="130" rx="16" fill="#2d2a3e" opacity=".12"/>
+  <rect x="0" y="324" width="220" height="130" rx="16" fill="#2d2a3e"/>
+  <g fill="none" stroke="#7fd0da" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 346l-8 8 8 8M42 346l8 8-8 8M36 342l-8 24"/>
+  </g>
+  <g>
+    <rect x="62" y="349" width="40" height="8" rx="4" fill="#e0604f"/>
+    <rect x="108" y="349" width="56" height="8" rx="4" fill="#fff" opacity=".85"/>
+    <rect x="18" y="374" width="46" height="8" rx="4" fill="#f2c94c"/>
+    <rect x="70" y="374" width="80" height="8" rx="4" fill="#7fd0da"/>
+    <rect x="34" y="392" width="38" height="8" rx="4" fill="#a9c66b"/>
+    <rect x="78" y="392" width="96" height="8" rx="4" fill="#fff" opacity=".6"/>
+    <rect x="34" y="410" width="60" height="8" rx="4" fill="#e9a15b"/>
+    <rect x="100" y="410" width="44" height="8" rx="4" fill="#fff" opacity=".6"/>
+    <rect x="18" y="428" width="30" height="8" rx="4" fill="#f2c94c"/>
+  </g>
+</svg>

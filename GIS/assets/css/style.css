@@ -656,10 +656,15 @@ ul {
   filter: blur(30px);
 }
 
+/* a true circle, so rotating it never widens the page */
 .gis-visual::before {
   content: "";
   position: absolute;
-  inset: 4%;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  aspect-ratio: 1;
+  translate: -50% -50%;
   border: 1.5px dashed color-mix(in srgb, var(--primary) 35%, transparent);
   border-radius: 50%;
   animation: spin 60s linear infinite;
@@ -736,6 +741,39 @@ ul {
   inset-inline-start: 6%;
   --c: #22a06b;
   animation-delay: -5s;
+}
+
+.chip-4 {
+  top: 2%;
+  inset-inline-end: 4%;
+  --c: #3776ab;
+  animation-delay: -2s;
+}
+
+/* Web GIS illustration (Services): tool-coloured chips, wider card */
+.webgis {
+  max-width: 580px;
+}
+
+.webgis .gis-card {
+  padding: 14px;
+}
+
+.webgis .chip-1 {
+  top: 2%;
+  inset-inline-start: 0;
+  --c: #e8b400;
+}
+
+.webgis .chip-2 {
+  top: 40%;
+  --c: #cc2927;
+}
+
+.webgis .chip-3 {
+  bottom: 2%;
+  inset-inline-start: 34%;
+  --c: #f2a900;
 }
 
 @media (max-width: 520px) {
@@ -815,6 +853,7 @@ ul {
 
 .section {
   padding-block: clamp(72px, 9vw, 112px);
+  overflow-x: clip;
 }
 
 .section-alt {
@@ -922,6 +961,26 @@ ul {
 }
 
 
+/* ---------- Services header: heading beside the Web GIS illustration ---------- */
+
+.services-top {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.services-top .section-head {
+  margin-bottom: 0;
+}
+
+@media (min-width: 900px) {
+  .services-top {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 56px;
+  }
+}
+
 /* ---------- Service cards (tilt + spotlight) ---------- */
 
 .cards {
@@ -937,7 +996,7 @@ ul {
 
 @media (min-width: 1040px) {
   .cards {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -1352,6 +1411,12 @@ ul {
   }
 }
 
+@media (min-width: 1100px) {
+  .skill-groups {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .skill-group {
   padding: 26px;
   border: 1px solid var(--line);
@@ -1414,33 +1479,6 @@ ul {
   transform: none;
 }
 
-.languages {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 18px;
-}
-
-.lang {
-  flex: 1 1 220px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 16px 20px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--surface);
-}
-
-.lang strong {
-  font-weight: 700;
-}
-
-.lang span {
-  color: var(--muted);
-  font-size: 14px;
-}
 
 /* ---------- Education ---------- */
 

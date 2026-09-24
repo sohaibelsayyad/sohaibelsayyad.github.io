@@ -51,6 +51,7 @@
   <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 3 3 6v15l6-3 6 3 6-3V3l-6 3-6-3z"/><path d="M9 3v15M15 6v15"/></symbol>
   <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="1.5"/></symbol>
   <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M10 21v-6h4v6"/><path d="M9 10h.01M15 10h.01"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16v-4M12 16V8M17 16v-7"/></symbol>
   <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
   <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
@@ -114,7 +115,7 @@
         <p class="coords"><span class="ping" aria-hidden="true"></span>24.47° N, 39.61° E · Al Madinah</p>
         <h1>Hi, I'm <span class="gradient-text">Sohaib Elsayyad</span></h1>
         <p class="hero-role">
-          <span class="rotator" data-words='["GIS Specialist","GIS Analyst & Developer","Mapping Specialist","Professional Land Surveyor","Technical Office Engineer"]'>GIS Specialist</span>
+          <span class="rotator" data-words='["GIS Specialist","Web GIS Developer","GIS Analyst","Data Analyst","Mapping Specialist","Professional Land Surveyor"]'>GIS Specialist</span>
         </p>
         <p class="hero-lead">
           I help water and infrastructure projects across Saudi Arabia turn field data into reliable maps,
@@ -152,9 +153,10 @@
               field with survey tools and in the technical office.
             </p>
             <p>
-              I'm skilled in <strong>ArcGIS Pro, ArcGIS Online and AutoCAD Civil 3D</strong>, with good knowledge
-              of programming for GIS and the web, and strong expertise in data management and analysis with
-              Microsoft Office.
+              I'm skilled in <strong>ArcGIS Pro, ArcGIS Online and AutoCAD Civil 3D</strong>, and I build
+              <strong>web maps and GIS applications</strong> with JavaScript. I manage spatial data in
+              <strong>SQL Server</strong>, automate and analyse with <strong>Python</strong>, and turn data of
+              every kind into <strong>Power BI</strong> dashboards.
             </p>
           </div>
         </div>
@@ -175,9 +177,23 @@
   <!-- Services -->
   <section class="section" id="services">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">02 — What I do</span>
-        <h2>Services</h2>
+      <div class="services-top">
+        <div class="section-head reveal">
+          <span class="eyebrow">02 — What I do</span>
+          <h2>Services</h2>
+          <p>From the field to the browser: survey data, spatial databases, web maps and dashboards.</p>
+        </div>
+
+        <div class="gis-visual webgis reveal zoom" style="--d:.15s">
+          <span class="chip chip-1"><i></i>JavaScript</span>
+          <span class="chip chip-2"><i></i>SQL Server</span>
+          <span class="chip chip-3"><i></i>Power BI</span>
+          <span class="chip chip-4"><i></i>Python</span>
+          <div class="gis-card">
+            <img src="assets/img/webgis-illustration.svg" width="660" height="470" loading="lazy"
+                 alt="Web GIS application with a layers panel, an interactive map, an analytics chart and SQL / JavaScript code">
+          </div>
+        </div>
       </div>
 
       <div class="cards">
@@ -187,20 +203,32 @@
           <h3>Data creation &amp; management</h3>
           <p>Building and maintaining shapefiles, feature classes and file geodatabases, converting data between formats, and managing asset data and metadata across multiple projects in ArcGIS.</p>
         </article>
-        <article class="card reveal" style="--d:.1s">
+        <article class="card reveal" style="--d:0.1s">
           <span class="card-num" aria-hidden="true">02</span>
           <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-map"/></svg></div>
-          <h3>Mapping &amp; analysis</h3>
+          <h3>Mapping &amp; spatial analysis</h3>
           <p>Processing and analysing raster and vector data to support engineers, including querying, reporting, extracting spatial data and producing maps and charts.</p>
         </article>
-        <article class="card reveal" style="--d:.2s">
+        <article class="card reveal" style="--d:0.2s">
           <span class="card-num" aria-hidden="true">03</span>
+          <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></div>
+          <h3>Web mapping development</h3>
+          <p>Building interactive web maps and web GIS apps with JavaScript, HTML and CSS, connected to live spatial data and easy to share across teams.</p>
+        </article>
+        <article class="card reveal" style="--d:0s">
+          <span class="card-num" aria-hidden="true">04</span>
+          <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></div>
+          <h3>Data analysis &amp; dashboards</h3>
+          <p>Analysing data of every kind with Python and SQL Server, and turning it into Power BI dashboards and reports that support decisions.</p>
+        </article>
+        <article class="card reveal" style="--d:0.1s">
+          <span class="card-num" aria-hidden="true">05</span>
           <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg></div>
           <h3>Land surveying</h3>
           <p>Field surveying, setting out and as-built surveys with GPS, total station and level, with survey reports ready for consultant approval.</p>
         </article>
-        <article class="card reveal" style="--d:.3s">
-          <span class="card-num" aria-hidden="true">04</span>
+        <article class="card reveal" style="--d:0.2s">
+          <span class="card-num" aria-hidden="true">06</span>
           <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg></div>
           <h3>Technical office</h3>
           <p>Project plans, shop drawings and as-built drawings in AutoCAD and Civil 3D, plus progress reports, handover documents and monthly invoices.</p>
@@ -464,8 +492,19 @@
         <div class="skill-group reveal">
           <h3><svg class="icon" aria-hidden="true"><use href="#i-map"/></svg>GIS &amp; mapping</h3>
           <ul class="tags">
-            <li class="core">ArcGIS Pro</li><li class="core">ArcMap</li><li>ArcGIS Online</li><li>QGIS</li>
-            <li>Spatial analysis</li><li>Cartography</li><li>Asset data management</li><li>Google Earth Pro</li><li>Google Maps</li>
+            <li class="core">ArcGIS Pro</li><li class="core">ArcMap</li><li>ArcGIS Online</li><li>QGIS</li><li>Spatial analysis</li><li>Cartography</li><li>Asset data management</li><li>Google Earth Pro</li><li>Google Maps</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal" style="--d:.1s">
+          <h3><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>Web GIS &amp; development</h3>
+          <ul class="tags">
+            <li class="core">JavaScript</li><li class="core">Web mapping</li><li>Web GIS applications</li><li>HTML &amp; CSS</li><li>Interactive maps</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg>Data &amp; analytics</h3>
+          <ul class="tags">
+            <li class="core">SQL Server</li><li class="core">Python</li><li class="core">Power BI</li><li>Data analysis</li><li>Data visualization</li><li>Data management</li><li>Data entry</li><li>Microsoft Office</li>
           </ul>
         </div>
         <div class="skill-group reveal" style="--d:.1s">
@@ -481,17 +520,11 @@
           </ul>
         </div>
         <div class="skill-group reveal" style="--d:.1s">
-          <h3><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>Data &amp; programming</h3>
+          <h3><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Languages</h3>
           <ul class="tags">
-            <li>Python</li><li>HTML &amp; CSS</li><li>Data management</li><li>Data analysis</li>
-            <li>Data visualization</li><li>Data entry</li><li>Microsoft Office</li>
+            <li class="core">Arabic · Native</li><li>English · Professional working</li>
           </ul>
         </div>
-      </div>
-
-      <div class="languages reveal">
-        <div class="lang"><strong>Arabic</strong><span>Native</span></div>
-        <div class="lang"><strong>English</strong><span>Professional working</span></div>
       </div>
     </div>
   </section>
