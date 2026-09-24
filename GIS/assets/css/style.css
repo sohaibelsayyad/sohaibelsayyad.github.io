@@ -441,8 +441,16 @@ ul {
 .hero {
   position: relative;
   isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: min(820px, calc(100svh - var(--header-h)));
   overflow: hidden;
-  padding-block: 64px 72px;
+  padding-block: 56px 40px;
+}
+
+.intro {
+  max-width: 640px;
 }
 
 /* World map background with a slow drift */
@@ -495,18 +503,6 @@ ul {
   .hero::before,
   [dir="rtl"] .hero::before {
     background: linear-gradient(to bottom, var(--hero-fade), color-mix(in srgb, var(--bg) 70%, transparent) 60%, var(--bg));
-  }
-}
-
-.hero-grid {
-  display: grid;
-  gap: 48px;
-  align-items: center;
-}
-
-@media (min-width: 900px) {
-  .hero-grid {
-    grid-template-columns: 1.1fr 1fr;
   }
 }
 
@@ -640,15 +636,15 @@ ul {
   }
 }
 
-/* Illustration with an orbit ring and floating tool chips */
-.hero-visual {
+/* GIS illustration (About section) with an orbit ring and floating tool chips */
+.gis-visual {
   position: relative;
   max-width: 540px;
   margin-inline: auto;
   padding: 28px;
 }
 
-.hero-visual::before {
+.gis-visual::before {
   content: "";
   position: absolute;
   inset: 4%;
@@ -663,7 +659,7 @@ ul {
   }
 }
 
-.hero-card {
+.gis-card {
   position: relative;
   padding: 22px;
   border: 1px solid var(--line);
@@ -735,37 +731,6 @@ ul {
   }
 }
 
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-top: 48px;
-}
-
-.stat {
-  padding: 18px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: color-mix(in srgb, var(--surface) 88%, transparent);
-  backdrop-filter: blur(6px);
-}
-
-.stat strong {
-  display: block;
-  font-size: clamp(1.35rem, 3.2vw, 2rem);
-  font-weight: 800;
-  color: var(--primary);
-  line-height: 1.2;
-  font-variant-numeric: tabular-nums;
-}
-
-.stat > span {
-  display: block;
-  margin-top: 4px;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.4;
-}
 
 .scroll-cue {
   display: flex;
@@ -841,8 +806,7 @@ ul {
 
 .section-alt .job,
 .section-alt .edu,
-.section-alt .card,
-.section-alt .facts {
+.section-alt .card {
   background: var(--bg);
 }
 
@@ -911,11 +875,12 @@ ul {
 .about-grid {
   display: grid;
   gap: 40px;
+  align-items: center;
 }
 
 @media (min-width: 900px) {
   .about-grid {
-    grid-template-columns: 1.4fr 1fr;
+    grid-template-columns: 1.1fr 1fr;
     gap: 56px;
   }
 }
@@ -934,33 +899,6 @@ ul {
   font-weight: 600;
 }
 
-.facts {
-  align-self: start;
-  padding: 8px 24px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-}
-
-.facts li {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  padding-block: 14px;
-  border-bottom: 1px solid var(--line);
-}
-
-.facts li:last-child {
-  border-bottom: 0;
-}
-
-.facts span:first-child {
-  color: var(--muted);
-}
-
-.facts span:last-child {
-  font-weight: 600;
-  text-align: end;
-}
 
 /* ---------- Service cards (tilt + spotlight) ---------- */
 
@@ -2185,8 +2123,7 @@ ul {
   transform: translateX(-36px);
 }
 
-[dir="rtl"].js .reveal.from-side,
-.js [dir="rtl"] .reveal.from-side {
+[dir="rtl"].js .reveal.from-side {
   transform: translateX(36px);
 }
 
@@ -2194,7 +2131,8 @@ ul {
   transform: scale(0.94);
 }
 
-.js .reveal.is-visible {
+.js .reveal.is-visible,
+[dir="rtl"].js .reveal.from-side.is-visible {
   opacity: 1;
   transform: none;
 }

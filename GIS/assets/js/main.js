@@ -100,30 +100,6 @@
     el.classList.add("is-visible");
   });
 
-  // ---- Animated counters ----
-  onVisible($$("[data-count]"), function (el) {
-    var target = Number(el.getAttribute("data-count"));
-    var suffix = el.getAttribute("data-suffix") || "";
-    var format = function (n) {
-      return (target >= 1900 && target <= 2100 ? String(n) : n.toLocaleString("en-US")) + suffix;
-    };
-    if (reduceMotion) {
-      el.textContent = format(target);
-      return;
-    }
-    // years count up from a nearby value instead of zero
-    var from = target >= 1900 && target <= 2100 ? target - 12 : 0;
-    var start = null;
-    var duration = 1600;
-    function step(t) {
-      if (start === null) start = t;
-      var p = Math.min((t - start) / duration, 1);
-      var eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = format(Math.round(from + (target - from) * eased));
-      if (p < 1) requestAnimationFrame(step);
-    }
-    requestAnimationFrame(step);
-  }, "0px");
 
   // ---- Typewriter for the rotating role ----
   var rotator = $(".rotator");
