@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <path id="a" vector-effect="non-scaling-stroke" d="M-100-10C-95-70-30-95 20-85 80-75 110-30 100 15 92 65 40 95-10 88-70 80-104 45-100-10Z"/>
+    <path id="b" vector-effect="non-scaling-stroke" d="M-90 5C-100-50-50-90 5-92 60-94 105-55 98-5 92 50 55 90 0 92-55 94-82 55-90 5Z"/>
+  </defs>
+  <g fill="none" stroke="#000" stroke-width="1.4">
+    <g transform="translate(1180 230) rotate(-12)">
+      <use xlink:href="#a" transform="scale(.35)"/>
+      <use xlink:href="#a" transform="scale(.75) rotate(4)"/>
+      <use xlink:href="#a" transform="scale(1.2) rotate(8)"/>
+      <use xlink:href="#a" transform="scale(1.7) rotate(12)"/>
+      <use xlink:href="#a" transform="scale(2.25) rotate(16)"/>
+      <use xlink:href="#a" transform="scale(2.85) rotate(20)"/>
+      <use xlink:href="#a" transform="scale(3.5) rotate(24)"/>
+      <use xlink:href="#a" transform="scale(4.2) rotate(28)"/>
+      <use xlink:href="#a" transform="scale(5) rotate(32)"/>
+    </g>
+    <g transform="translate(160 700) rotate(30)">
+      <use xlink:href="#b" transform="scale(.4)"/>
+      <use xlink:href="#b" transform="scale(.85) rotate(-5)"/>
+      <use xlink:href="#b" transform="scale(1.35) rotate(-10)"/>
+      <use xlink:href="#b" transform="scale(1.9) rotate(-15)"/>
+      <use xlink:href="#b" transform="scale(2.5) rotate(-20)"/>
+      <use xlink:href="#b" transform="scale(3.15) rotate(-25)"/>
+      <use xlink:href="#b" transform="scale(3.85) rotate(-30)"/>
+    </g>
+  </g>
+</svg>

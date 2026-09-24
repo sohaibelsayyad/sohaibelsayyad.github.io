@@ -1,654 +1,814 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="sohaibelsayyad">
-	<meta name="keywords" content="">
-	<meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sohaib Elsayyad — GIS Specialist &amp; Land Surveyor</title>
+  <meta name="description" content="Sohaib Elsayyad — GIS specialist and professional land surveyor in Saudi Arabia, supporting National Water Company (NWC) projects with ArcGIS Pro, ArcMap and AutoCAD Civil 3D.">
+  <meta name="author" content="Sohaib Elsayyad">
+  <meta name="theme-color" content="#0d6b66">
+  <link rel="canonical" href="https://sohaibelsayyad.github.io/GIS/">
+  <link rel="alternate" hreflang="en" href="https://sohaibelsayyad.github.io/GIS/">
+  <link rel="alternate" hreflang="ar" href="https://sohaibelsayyad.github.io/GIS/ar.html">
 
-	<title>Sohaib Elsayyad</title>
-	<!-- favico-->
-	<link rel="shortcut icon" type="image/ico" href="img/favicon.png">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Sohaib Elsayyad — GIS Specialist & Land Surveyor">
+  <meta property="og:description" content="GIS specialist and professional land surveyor in Saudi Arabia.">
+  <meta property="og:url" content="https://sohaibelsayyad.github.io/GIS/">
+  <meta property="og:image" content="https://sohaibelsayyad.github.io/GIS/assets/img/gis-illustration.png">
+  <meta name="twitter:card" content="summary_large_image">
 
-	<!-- Frameworks Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preload" as="image" href="assets/img/bg/world-map.jpg">
 
-	<!-- Frameworks Bootrtrap Fullscreen modal -->
-	<link rel="stylesheet" type="text/css" href="css/bootrtrap-modal-carousel.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-	<!-- Animated css -->
-	<link rel="stylesheet" type="text/css" href="css/animated-text.css">
-
-	<!-- Custom css -->
-	<link rel="stylesheet" type="text/css" href="css/custom.css">
-
-	<!-- Owl Carousel css -->
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-	<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
-	<link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
-
-	<!-- Animate css -->
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-
-	<!-- Themify icon -->
-	<link rel="stylesheet" type="text/css" href="css/themify-icons.css">
-
-	<!-- Google fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,600italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500' rel='stylesheet' type='text/css'>
-
+  <script>document.documentElement.classList.add("js");</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sohaib Elsayyad",
+    "jobTitle": "GIS Specialist",
+    "email": "mailto:sohaib.elsayad1@gmail.com",
+    "telephone": "+966567626056",
+    "address": { "@type": "PostalAddress", "addressLocality": "Al Madinah Al Munawwarah", "addressCountry": "SA" },
+    "alumniOf": "Mansoura University",
+    "knowsLanguage": ["ar", "en"],
+    "url": "https://sohaibelsayyad.github.io/GIS/",
+    "sameAs": ["https://www.linkedin.com/in/sohaib-elsayyad-061043327"]
+  }
+  </script>
 </head>
-<body id="page-top" class="index">
+<body>
 
-<!-- Preloader -->
-	<div id="loader">
-		<div class="icon"></div>
-	</div>
-<!-- End : Preloader -->
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7l10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 3 3 6v15l6-3 6 3 6-3V3l-6 3-6-3z"/><path d="M9 3v15M15 6v15"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="1.5"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M10 21v-6h4v6"/><path d="M9 10h.01M15 10h.01"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.6a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.2-.2-.5-.3z"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4 20-7z"/><path d="M22 2 11 13"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></symbol>
+</svg>
 
-<!-- Navigation -->
-<div id="navigation">
-	<nav class="navbar navbar-default navbar-static-top" id="nav">
-		<div class="container">
-			<div class="navbar-header page-scroll">
-				<button type="buttion" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<!-- Brand -->
-				<a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png"></a>
-				<!-- End Brand -->
-			</div>
-			<div class="collapse navbar-collapse">
-	            <ul class="nav navbar-nav navbar-right">
-					<li>
-	                	<a class="page-scroll" href="#introduction">Introduction</a>
-	              	</li>
-	              	<li>
-	                	<a class="page-scroll" href="#education">Education</a>
-	              	</li>
-	              	<li>
-	                	<a class="page-scroll" href="#skills">Skills</a>
-	              	</li>
-					  <li>
-	                	<a class="page-scroll" href="#experience">Resume</a>
-	              	</li>
-	              	<li>
-	                	<a class="page-scroll" href="#portfolio">COURSES</a>
-	              	</li>             	              	              	
-	              	<li>
-	                	<a class="page-scroll" href="#contact">Contact</a>
-	              	</li>
-					<li>
-						<a href="https://sohaibelsayyad.github.io/GIS/ar.html" class="link-item langsite ms-4">
-							<span class="ti-world">
-								Arabic
-							</span>
-						</a>
-	              	</li>			              			              
-	            </ul>
-		    </div>
-		</div>
-	</nav>
-</div>
-<!-- END Navigation -->
+<a class="skip-link" href="#main">Skip to content</a>
 
 <!-- Header -->
-<header class="header-img">
-	<div class="header-overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-left">
-					<h1>Hi, I'm Sohaib Elsayyad</h1>
-					<h2 class="cd-headline clip is-full-width">
-						<span class="cd-words-wrapper">
-							<b class="is-visible"> GIS <br class="visible-xs"> Specialist .. </b>
-							<b>Analyst &amp;<br class="visible-xs"> Mapping &amp; Developer !</b>
-							<b>Technical<br class="visible-xs"> Office ..</b>
-							<b>Professional <br class="visible-xs"> Land Surveyor ..</b>
-						</span>
-					</h2>
-					<a href="#introduction" class="page-scroll btn custom-btn-3">MY RESUME</a>
-				</div>
-			</div>
-		</div>
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="brand" href="#top" aria-label="Sohaib Elsayyad — home">
+      <span class="brand-mark" aria-hidden="true">SE</span>
+      <span>Sohaib Elsayyad</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu">
+      <svg class="icon"><use href="#i-menu"/></svg>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <a class="lang-switch" href="ar.html" hreflang="ar" lang="ar">
+          <svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>
+          العربية
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="scroll-progress" aria-hidden="true"></div>
 </header>
-<!-- END: Header -->
 
-<!-- Introduction -->
-<section id="introduction">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 profile">
-				<img src="img/intr.png" alt="" class="img-responsive center-block wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">
-			</div>
-			<div class="col-md-6">
-				<div class="wow fadeIn" data-wow-duration="2.3s" data-wow-delay="2.4s">
-					<h2 class="sub-headline">Introduction<span class="dot">.</span></h2>
-					<p><b> Hello !</b>&nbsp; I’m Sohaib elsayyad.<br>
-						GIS (Specialist-Analyst-Mapping-Developer) and expert Land Surveyor with a history of working in Infrastructure ,Construction and Civil engineering industry in field with survey tools and technical office work.<br>
-						Skilled in ArcGis Pro ,ArcGis online ,AutoCAD Civil 3D and good knowledge in programming languages for GIS and Web Programming.<br>
-						Great expertise in Data Management and Analysis with Microsoft Office programs.</p>	
+<main id="main">
 
-					<ul class="info">
-						<li>Date Of Birth : 18 July, 1992</li>	
-						<li>Country : Egypt</li>
-					</ul>
-				</div>		
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero-map" aria-hidden="true"></div>
 
-					<div class="download-cv wow fadeInUp" data-wow-duration="2.7s" data-wow-delay="2.8s">
-						<a class="btn" target="_blank" href="img/CV.pdf">Download CV</a>
-					</div>						
-			</div>
-		</div>
-	</div>
-</section>
-<!-- END: Introduction -->
+    <div class="container hero-grid">
+      <div class="intro">
+        <p class="coords"><span class="ping" aria-hidden="true"></span>24.47° N, 39.61° E · Al Madinah</p>
+        <h1>Hi, I'm <span class="gradient-text">Sohaib Elsayyad</span></h1>
+        <p class="hero-role">
+          <span class="rotator" data-words='["GIS Specialist","GIS Analyst & Developer","Mapping Specialist","Professional Land Surveyor","Technical Office Engineer"]'>GIS Specialist</span>
+        </p>
+        <p class="hero-lead">
+          I support National Water Company (NWC) projects by turning field data into reliable maps,
+          geodatabases and analysis for infrastructure teams.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="assets/docs/Sohaib-Elsayyad-CV.pdf" download>
+            <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+            Download CV
+          </a>
+          <a class="btn btn-ghost" href="#contact">
+            <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+            Let's talk
+          </a>
+        </div>
+        <p class="status"><span class="status-dot" aria-hidden="true"></span>Available for new opportunities</p>
+      </div>
 
-<!-- About -->
-<section id="about">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2 class="sub-headline">What I do<span class="dot">.</span></h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3 col-md-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-				<span class="fa fa-"></span>
-				<h3><span class="number">1. </span>Create & Data Manage</h3>
-				<p>Create maps and graphs using (GIS software-Google earth-Google maps) and converting data from one form to another, creating and editing shapefiles, feature class, file geodatabases, and other spatial editing and maintaining geospatial databases and metadata on multiple simultaneous projects using ArcGIS software products.</p>
-			</div>
-			<div class="col-md-3 col-md-6 wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay="1.2s">
-				<h3><span class="number">2. </span>Mapping & Analyse</h3>
-				<p>Processing and analyzing raster and vector geospatial data in support of staff engineers.  experience with Querying, reporting, and extraction of spatial data.</p>
-			</div>
-			<div class="col-md-3 col-md-6 wow fadeInLeft" data-wow-duration="1.4s" data-wow-delay="1.4s">
-				<h3><span class="number">3. </span>Surveying Engineering</h3>
-				<p>Expert Land Surveyor with working in field with survey tools (GPS & Total Station & level).</p>
-			</div>
-			<div class="col-md-3 col-md-6 wow fadeInLeft" data-wow-duration="1.4s" data-wow-delay="1.4s">
-				<h3><span class="number">4. </span>Technical Office</h3>
-				<p>Useing autoCAD and autoCAD Civil 3D and good knowledge in engineering Infrastructure ,Construction and Civil engineering industry 
-					making drawings and shop drawings expertise in Data Management and Analysis with Microsoft Office programs.</p>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- END About -->
+      <div class="hero-visual reveal zoom" style="--d:.3s">
+        <span class="chip chip-1"><i></i>ArcGIS Pro</span>
+        <span class="chip chip-2"><i></i>AutoCAD Civil 3D</span>
+        <span class="chip chip-3"><i></i>GPS · Total Station</span>
+        <div class="hero-card">
+          <img src="assets/img/gis-illustration.png" width="688" height="523"
+               alt="Illustration of GIS data layers: networks, land parcels, terrain and points of interest">
+        </div>
+      </div>
+    </div>
 
-<!-- Education -->
-<section id="education">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2 class="sub-headline">Education<span class="dot">.</span></h2>
-			</div>
-		</div>
-		<div class="row top-pad">
-			<div class="col-md-4">
-				<div class="border-style wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-					<span class="year">2010 - 2014</span>
-				</div>
-				<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".5s">
-					<h3 class="sub-icon"><span class="ti-book"></span>Student</h3>
-					<h4>Bachelor of Arts (B.A.)</h4>
-					<p>Geographic Information system and Surveying Engineering.</p>
-				</div>	
-			</div>
-			<div class="col-md-4">
-				<div class="image" data-wow-duration="2s" data-wow-delay=".5s">
-					<img src="img/s-un.jpg" alt="" class="img-responsive center-block wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">
-				</div>	
-			</div>
-			<div class="col-md-4">
-				<div class="image" data-wow-duration="2s" data-wow-delay=".5s">
-					<img src="img/s-un1.jpg" alt="" class="img-responsive center-block wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">
-				</div>	
-			</div>
-		</div>	
-	</div>
-</section>
-<!-- END Education -->
+    <div class="container">
+      <ul class="stats">
+        <li class="stat reveal" style="--d:.1s"><strong data-count="2017">2017</strong><span>Working in surveying &amp; GIS since</span></li>
+        <li class="stat reveal" style="--d:.2s"><strong data-count="1200" data-suffix="+">1,200+</strong><span>Water house connections supervised</span></li>
+        <li class="stat reveal" style="--d:.3s"><strong data-count="17">17</strong><span>Esri &amp; LinkedIn certifications</span></li>
+      </ul>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About"><span></span></a>
+    </div>
+  </section>
 
-<!-- Quotes -->
-<section id="quotes">
-	<div class="container">
-		<div class="row">
-			<div class="quotes-overlay"></div>
-				<div class="col-md-8 col-xs-12 text-center">
-					<h2>“Knowing where things are, and why, is essential to rational decision making”</h2>
-				</div>
-		</div>
-	</div>
-</section>
-<!-- END Quotes -->
+  <!-- About -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">01 — About</span>
+        <h2>GIS, surveying and the technical office in one profile</h2>
+      </div>
 
-<!-- Skills -->
-<section id="skills">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
-				<h2 class="sub-headline">Skills<span class="dot">.</span></h2>
-					<p>Tell me and I forget. Teach me and I remember. Involve me and I learn.</p>
-			</div>
-			<div class="col-md-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-				<h4>ArcGis Pro & ArcGis Online</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="85"></div>
-				</div>
-				<h4>Autodesk Civil 3D</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="90"></div>
-				</div>
-				<h4>Autodesk Revit</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="60"></div>
-				</div>
-				<h4>Google Earth Pro</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="95"></div>
-				</div>
-				<h4>Python</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="80"></div>
-				</div>
-				<h4>Microsoft Office</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="99"></div>
-				</div>
-				<h4>Data Entry & Data Analysis</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="90"></div>
-				</div>
-				<h4>Data Mapping & Data Visualization</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="85"></div>
-				</div>
-				<h4>Global Positioning System (GPS)</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="97"></div>
-				</div>
-			</div>
-			<div class="col-md-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.2s">
-				<h4>Arc Map</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="90"></div>
-				</div>
-				<h4>Quantum GIS</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="80"></div>
-				</div>
-				<h4>P6 Primavera</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="40"></div>
-				</div>
-				<h4>Google Maps</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="95"></div>
-				</div>
-				<h4>(Programming Language) Html & css</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="75"></div>
-				</div>
-				<h4>Data Management</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="95"></div>
-				</div>
-				<h4>Spatial Analysis</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="84"></div>
-				</div>
-				<h4>Cartography</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="86"></div>
-				</div>
-				<h4>Survey tool (Total Station & level)</h4>
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" data-transitiongoal="96"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End -->
+      <div class="about-grid">
+        <div class="about-text reveal from-side">
+          <p>
+            I'm a <strong>GIS specialist (analyst, mapping, developer) and expert land surveyor</strong> with a
+            history of working in the infrastructure, construction and civil engineering industry, both in the
+            field with survey tools and in the technical office.
+          </p>
+          <p>
+            I'm skilled in <strong>ArcGIS Pro, ArcGIS Online and AutoCAD Civil 3D</strong>, with good knowledge
+            of programming for GIS and the web, and strong expertise in data management and analysis with
+            Microsoft Office.
+          </p>
+        </div>
 
-<!-- Experience -->
-<section id="experience">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2 class="sub-headline">Experience<span class="dot">.</span></h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="row">
-					<div class="col-sm-3">
-						<img src="img/05.png" class="img-responsive center-block">
-					</div>
-					<div class="col-sm-9">
-						<div class="border-style wow fadeInDonw" data-wow-duration="1s" data-wow-delay=".5s">
-							<span class="year">February 2023 - Now (6 months)</span>
-						</div>
-						<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".5s">
-							<h3><span class="ti-briefcase experience"></span>GEOGRAPHIC INFORMATION SYSTEM SPECIALIST</h3>
-							<h4>Sarh Alhaditha Co.</h4>
-							<p><b>Project #1#( Construction of outlet for transporters of sewage water in Asla valley -Makah District- Jeddah city )</b><br>
-								Relocating utilities, construction of wastewater treatment plant, construction of pump station, Installation of valves & valves chamber, Providing fully functional electrical, mechanical, lighting systems needed for the site of the plant.<br>
-								<b>Project #2#( Completion of a Project for the Study, Design and Implementation of a Water line to connect from the existing line with a diameter of 1200mm Ameron on Madinah Road to Al-Islahiya in Jeddah )</b><br>
-								- Documentation of construction activities through daily, weekly and monthly
-								reports.<br>
-								- Technical Support for sites.<br>
-								- Coordinate with the Consultant.<br>
-								- Prepare Shop Drawings, As built Drawings and Hand Over Documents.<br>
-								- Prepare Monthly Invoices.<br>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3">
-						<img src="img/01.png" class="img-responsive center-block">
-					</div>
-					<div class="col-sm-9">
-						<div class="border-style wow fadeInDonw" data-wow-duration="1s" data-wow-delay=".5s">
-							<span class="year">August 2021 - Now (1 year 7 months)</span>
-						</div>
-						<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".5s">
-							<h3><span class="ti-briefcase experience"></span>GEOGRAPHIC INFORMATION SYSTEM SPECIALIST</h3>
-							<h4>Al Sabq Al Arabi Traiding & Contracting</h4>
-							<p><b>Project #1#( Eisal Project --Implementation of water house and sewerage connections. -Makah District- Jeddah city )</b><br>
-								Supervision and follow-up of works to implement more than 1,200 domesticwater connections all over the city of Jeddah:<br>
-								- Creating the GIS data for the project.<br>
-								- Surveying works for the executed works with GPS.<br>
-								- Organizing work sites and sending sites, photos and permits for transactionsto work teams to facilitate and complete work.<br>
-								- Conducting a field survey with the representative of the National WaterCompany for clients.<br>
-								- Prepare reports for the company and the National Water Company.<br>
-								- Making and closing the permits on the Jeddah Municipality system.<br>
-								- Closing transactions on the National Water Company (EAM) system.<br>
-								<b>Project #2#( Contract No. (18A) --Implementation of house sewerage connections. -Al-Basateen District (1)- Jeddah city)</b><br>
-								- Creating the GIS data for the project.<br>
-								- Surveying works for the executed works with GPS.<br>
-								- Making and closing the permits on the Jeddah Municipality system.<br></p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3">
-						<img src="img/01.png" class="img-responsive center-block">
-					</div>
-					<div class="col-sm-9">
-						<div class="border-style wow fadeInDonw" data-wow-duration="1s" data-wow-delay=".5s">
-							<span class="year">January 2021 - July 2021 (7 months)</span>
-						</div>
-						<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".5s">
-							<h3><span class="ti-briefcase experience"></span>PROFESSIONAL LAND SURVEYOR</h3>
-							<h4>Al Sabq Al Arabi Traiding & Contracting</h4>
-							<p><b>( Contract No. (7) --Completion of the sewage networks project for ALQAM -Ibn Rayhan in ALHulaqa and Al Rahmaniyah. -At Taif city )</b><br>
-								- Conducting a field survey of the project using GPS.<br>
-								- Preparing survey work reports and following up the work of the technical office.<br>
-								- Handing over the consultant survey work for approval.<br>
-								- Participate in technical offic work design, drafting and modify using AutoCAD Civil 3D.<br>
-								- Excavation and extension works for sewage pipelines with diameters of 200, 300, 600 and 1200 mm.<br>
-								- Home sewage connections work.<br></p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3">
-						<img src="img/03.png" class="img-responsive center-block">
-					</div>
-					<div class="col-sm-9">
-						<div class="border-style wow fadeInDonw" data-wow-duration="1s" data-wow-delay=".5s">
-							<span class="year">2018 - 2020 (2 years)</span>
-						</div>
-						<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".5s">
-							<h3><span class="ti-briefcase experience"></span>LAND SURVEYOR</h3>
-							<h4>Engineering Company for Integrated Projects ECIP</h4>
-							<p><b>( Chipsy Phase 3 Project in Alabour )</b><br>
-								- Analyzed previous maps, physical evidence, and other documents.<br>
-								- Experience using a total station to collect land survey data.</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3">
-						<img src="#" class="img-responsive center-block">
-					</div>
-					<div class="col-sm-9">
-						<div class="border-style wow fadeInDonw" data-wow-duration="1s" data-wow-delay=".5s">
-							<span class="year">2017 - 2018 (1 year)</span>
-						</div>
-						<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".5s">
-							<h3><span class="ti-briefcase experience"></span>LAND SURVEYOR</h3>
-							<h4>Cairo Consulting Company</h4>
-							<p><b>( Transport links for the House of Al Watan project in Al-Rehab )</b><br>
-								- Performed conventional survey by level and total station.</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3">
-						<img src="img/02.png" class="img-responsive center-block">
-					</div>
-					<div class="col-sm-9">
-						<div class="border-style wow fadeInDonw" data-wow-duration="1s" data-wow-delay=".5s">
-							<span class="year">2012 - 2016 (4 years)</span>
-						</div>
-						<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".5s">
-							<h3><span class="ti-briefcase experience"></span>ACCOUNTANT</h3>
-							<h4>Ice food (Gersey Ice Cream)</h4>
-							<p><b>( Trade and distribution of ice cream products )</b><br>
-								- Inputting and updating new information about accounts and customers intothe user database.<br>
-								- Compiled and sorted source data for submitting by computer.<br>
-								- Checked for deficiencies in records for customers and accounts byprocessing customer data.</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3">
-						<img src="img/02.png" class="img-responsive center-block">
-					</div>
-					<div class="col-sm-9">
-						<div class="border-style wow fadeInDonw" data-wow-duration="1s" data-wow-delay=".5s">
-							<span class="year">2010 - 2012 (2 years)</span>
-						</div>
-						<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".5s">
-							<h3><span class="ti-briefcase experience"></span>DATA ENTRY</h3>
-							<h4>Ice food (Gersey Ice Cream)</h4>
-							<p><b>( Trade and distribution of ice cream products )</b><br>
-								- Inputting and updating new information about accounts and customers intothe user database.<br>
-								- Compiled and sorted source data for submitting by computer</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- END experience -->
+        <ul class="facts reveal" style="--d:.15s">
+          <li><span>Based in</span><span>Al Madinah, Saudi Arabia</span></li>
+          <li><span>Nationality</span><span>Egyptian</span></li>
+          <li><span>Date of birth</span><span>18 July 1992</span></li>
+          <li><span>Languages</span><span>Arabic · English</span></li>
+          <li><span>Focus</span><span>GIS · Surveying · Technical office</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<!-- COURSES -->
-<section id="portfolio" class="portfolio-wrap">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2 class="sub-headline">Licenses & certifications<span class="dot">.</span></h2>
-			</div>
-		</div>
-		<div class="row">
-			<div id="portfolio-items" class="col-xs-12">
-				<div class="row">	
-    				<div class="col-md-3 col-xs-12 mix print" data-myorder="1">					
-    					<a href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/6415757fedba702d87a7ad0e/-180" target="_blank">
-    					<img src="img/portfolio01.jpg" alt="" class="img-responsive center-block">
-    					</a>
-    				</div>
-					<div class="col-md-3 col-xs-12 mix print" data-myorder="1">					
-    					<a href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/63df55fd5b71755a053a9aa0/-180" target="_blank">
-    						<img src="img/portfolio11.jpg" alt="" class="img-responsive center-block">
-    					</a>	
-    				</div>
-					<div class="col-md-3 col-xs-12 mix print" data-myorder="1">					
-    					<a href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/6390951d25163e1d9454fcb6/-180" target="_blank">
-    					<img src="img/portfolio12.jpg" alt="" class="img-responsive center-block">
-    					</a>	
-    				</div>
-					<div class="col-md-3 col-xs-12 mix print" data-myorder="1">					
-    					<a href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/635637c537a27142de87b515/-180" target="_blank">
-    					<img src="img/portfolio13.jpg" alt="" class="img-responsive center-block">
-    					</a>	
-    				</div>
-					<div class="col-md-3 col-xs-12 mix print" data-myorder="1">					
-    					<a href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/635e341e4f02f9290a8fcacf/-180" target="_blank">
-    					<img src="img/portfolio14.jpg" alt="" class="img-responsive center-block">
-    					</a>	
-    				</div>
-					<div class="col-md-3 col-xs-12 mix print" data-myorder="1">					
-    					<a href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/63562519a8dc07564c7da3d5/-180" target="_blank">
-    					<img src="img/portfolio15.jpg" alt="" class="img-responsive center-block">
-    					</a>	
-    				</div>
-					<div class="col-md-3 col-xs-12 mix print" data-myorder="1">					
-    					<a href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/6360b4157c09015d185a9bd6/-180" target="_blank">
-    					<img src="img/portfolio16.jpg" alt="" class="img-responsive center-block">
-    					</a>	
-    				</div>
-					<div class="col-md-3 col-xs-12 mix print" data-myorder="1">					
-    					<a href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/633a9617660df83f2d69c877/-180" target="_blank">
-    					<img src="img/portfolio17.jpg" alt="" class="img-responsive center-block">
-    					</a>	
-    				</div>
-					<div class="col-md-3 col-xs-12 mix print" data-myorder="1">					
-    					<a href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/6354e2e2a8dc07564c7269b2/-180" target="_blank">
-    					<img src="img/portfolio18.jpg" alt="" class="img-responsive center-block">
-    					</a>	
-    				</div>
-					<div class="col-md-3 col-xs-12 mix print" data-myorder="1">					
-    					<a href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/6353a8b7a8dc07564c6966c4/-180" target="_blank">
-    					<img src="img/portfolio19.jpg" alt="" class="img-responsive center-block">
-    					</a>	
-    				</div>
-					<div class="col-md-3 col-xs-12 mix print" data-myorder="1">					
-    					<a href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/6374906b1de6b14fe11be29c/-180" target="_blank">
-    					<img src="img/portfolio20.jpg" alt="" class="img-responsive center-block">
-    					</a>	
-    				</div>
-					<div class="col-md-3 col-xs-12 mix print" data-myorder="1">					
-    					<a href="https://www.linkedin.com/learning/certificates/d029bc779ed6a73dc43bb9cc4e2e9990a4ba068d8ff9ee415314bff4190af428" target="_blank">
-    					<img src="img/portfolio02.jpg" alt="" class="img-responsive center-block">
-    					</a>	
-    				</div>
-					<div class="col-md-3 col-xs-12 mix print" data-myorder="1">					
-    					<a href="https://www.linkedin.com/learning/certificates/e8a2b5eea43c152c7a9a67165b239ff19fe08cf5a74c48a89ea58e487cfb3d67" target="_blank">
-    					<img src="img/portfolio03.jpg" alt="" class="img-responsive center-block">
-    					</a>	
-    				</div>
-					<div class="col-md-3 col-xs-12 mix print" data-myorder="1">					
-    					<a href="https://www.linkedin.com/learning/certificates/83dda400413fe441f6148bbbb88a4eb209164b723f3701caebbe9496640822e2" target="_blank">
-    					<img src="img/portfolio04.jpg" alt="" class="img-responsive center-block">
-    					</a>	
-    				</div>
-					<div class="col-md-3 col-xs-12 mix print" data-myorder="1">					
-    					<a href="https://www.linkedin.com/learning/certificates/cde242ea05626d5af2987ebc73d5446bfa904ea3212e435e34be837833c2589e" target="_blank">
-    					<img src="img/portfolio05.jpg" alt="" class="img-responsive center-block">
-    					</a>	
-    				</div>
-					<div class="col-md-3 col-xs-12 mix print" data-myorder="1">					
-    					<a href="https://www.linkedin.com/learning/certificates/75d35b7c35b60912d660602884a80b73d87e9b69b21f5618a5ca55a10dd1e6f0" target="_blank">
-    					<img src="img/portfolio06.jpg" alt="" class="img-responsive center-block">
-    					</a>	
-    				</div>
-    			</div>  
-    		</div>	  				
-    	</div>					
-	</div>
-</section>
-<!-- END: COURSES -->
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">02 — What I do</span>
+        <h2>Services</h2>
+      </div>
 
-<!-- Call to action -->
-<section id="cta">
-	<div class="container">
-		<div class="cta-overlay"></div>
-		<div class="row status-icon">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="row">
-					<div class="col-sm-8">
-						<h2 class="wow zoomIn" data-wow-duration="1s" data-wow-delay=".5s">I'm ready to work ...?</h2>
-						<h3><span class="ti-pulse pulse2"></span>Status&nbsp;:&nbsp;Available</h3>
-					</div>
-					<div class="col-sm-4 text-center">
-						<a href="#contact" class="page-scroll btn custom-btn-1">Contact</a>
-					</div>
-				</div>	
-			</div>	
-		</div>
-	</div>
-</section>
-<!-- END: Call to action -->
+      <div class="cards">
+        <article class="card reveal" style="--d:0s">
+          <span class="card-num" aria-hidden="true">01</span>
+          <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></div>
+          <h3>Data creation &amp; management</h3>
+          <p>Building and maintaining shapefiles, feature classes and file geodatabases, converting data between formats, and managing asset data and metadata across multiple projects in ArcGIS.</p>
+        </article>
+        <article class="card reveal" style="--d:.1s">
+          <span class="card-num" aria-hidden="true">02</span>
+          <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-map"/></svg></div>
+          <h3>Mapping &amp; analysis</h3>
+          <p>Processing and analysing raster and vector data to support engineers, including querying, reporting, extracting spatial data and producing maps and charts.</p>
+        </article>
+        <article class="card reveal" style="--d:.2s">
+          <span class="card-num" aria-hidden="true">03</span>
+          <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg></div>
+          <h3>Land surveying</h3>
+          <p>Field surveying, setting out and as-built surveys with GPS, total station and level, with survey reports ready for consultant approval.</p>
+        </article>
+        <article class="card reveal" style="--d:.3s">
+          <span class="card-num" aria-hidden="true">04</span>
+          <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg></div>
+          <h3>Technical office</h3>
+          <p>Project plans, shop drawings and as-built drawings in AutoCAD and Civil 3D, plus progress reports, handover documents and monthly invoices.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<!-- Contact -->
-<section id="contact">
-	<div class="container">
-		<div class="row sub-icon">
-			<div class="col-md-10 col-md-offset-1 col-md-push-1">
-				<div class="row">
-					<div class="col-sm-4 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".4s">
-						<h3><span class="ti-location-pin"></span>Address</h3>
-						<p>Jeddah, Makkah, Saudi Arabia</p>
-					</div>
-					<div class="col-sm-4 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".6s">
-						<h3><span class="ti-email"></span>Email</h3>
-						<p>sohaib.elsayad1@gmail.com</p>							
-					</div>
-					<div class="col-sm-4 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".8s">
-						<h3><span class="ti-mobile"></span>Phone</h3>
-						<a href="tel:+966567626056">+966 567 626 056</a>							
-					</div>
-				</div>	
-			</div>	
-		</div>
-	</div>
-</section>
-<!-- END: Contact -->
+  <!-- Experience -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">03 — Experience</span>
+        <h2>Work history</h2>
+      </div>
 
-<!-- Footer -->
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<ul class="list-inline social-icon">
-					<li><a href="https://www.linkedin.com/in/sohaib-elsayyad-b36873b0" target="_blank"><span class="ti-linkedin"></span></a></li>
-				</ul>
-				<p><b> © 2023 <span>sohaibelsayyad</span> All Right Reserved</b></p>				
-			</div>
-		</div>
-	</div>	
+      <div class="timeline">
+        <span class="timeline-fill" aria-hidden="true"></span>
+
+        <article class="job is-current reveal">
+          <div class="job-logo monogram" aria-hidden="true">AK</div>
+          <div>
+            <div class="job-head">
+              <div>
+                <h3>GIS Specialist</h3>
+                <p class="job-company">Al-Kuthban Engineering &amp; Project Management Consultants</p>
+              </div>
+              <div class="job-meta">
+                <span class="pill now"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Jan 2025 – Present</span>
+                <span data-start="2025-01"></span>
+                <span>Al Madinah Al Munawwarah, Saudi Arabia</span>
+              </div>
+            </div>
+            <span class="client">Client: <b>National Water Company (NWC)</b></span>
+            <div class="project">
+              <p>Technical support for asset data management services in the NWC Northwest Sector, GIS Department.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-logo monogram" aria-hidden="true">AW</div>
+          <div>
+            <div class="job-head">
+              <div>
+                <h3>GIS Specialist</h3>
+                <p class="job-company">Alkhorayef Water &amp; Power Technologies (AWPT)</p>
+              </div>
+              <div class="job-meta">
+                <span class="pill"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Jul 2024 – Jan 2025</span>
+                <span>7 mos · Riyadh, Saudi Arabia</span>
+              </div>
+            </div>
+            <span class="client">Client: <b>National Water Company (NWC)</b></span>
+            <div class="project">
+              <h4>Management, operation and maintenance contract for the NWC Central Cluster</h4>
+              <p>Supply, installation, construction, testing and commissioning of DMA/DMZ chambers.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-logo"><img src="assets/img/logos/sarh-alhaditha.jpg" alt="Sarh Alhaditha Co. logo" width="64" height="64" loading="lazy"></div>
+          <div>
+            <div class="job-head">
+              <div>
+                <h3>GIS Specialist</h3>
+                <p class="job-company">Sarh Alhaditha Co. for Contracting</p>
+              </div>
+              <div class="job-meta">
+                <span class="pill"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Feb 2023 – Jul 2024</span>
+                <span>1 yr 7 mos · Jeddah, Saudi Arabia</span>
+              </div>
+            </div>
+            <span class="client">Client: <b>National Water Company (NWC)</b></span>
+
+            <div class="project">
+              <h4>Sewage tanker outfall in Wadi Al-Asla, Jeddah</h4>
+              <p>Relocating utilities, building a wastewater treatment plant and pump station, installing valves and valve chambers, and delivering the electrical, mechanical and lighting systems for the plant site.</p>
+              <ul class="bullets">
+                <li>Preparing project plans for the company and the National Water Company (PMM).</li>
+                <li>Documenting construction activities in daily, weekly and monthly reports.</li>
+                <li>Preparing shop drawings, as-built drawings and handover documents.</li>
+                <li>Preparing monthly invoices.</li>
+                <li>Technical support for the sites.</li>
+                <li>Issuing and closing permits on the Jeddah Municipality system.</li>
+              </ul>
+            </div>
+            <div class="project">
+              <h4>Completion of the study, design and construction of a water line from the existing 1200 mm Ameron line on Madinah Road to Al-Islahiya, Jeddah</h4>
+              <ul class="bullets">
+                <li>Documenting construction activities in daily, weekly and monthly reports.</li>
+                <li>Preparing project plans for the company and the National Water Company.</li>
+                <li>Preparing monthly invoices.</li>
+                <li>Technical support for the sites and coordination with the consultant.</li>
+                <li>Preparing shop drawings, as-built drawings and handover documents.</li>
+                <li>Creating the project's GIS data.</li>
+                <li>Issuing and closing permits on the Jeddah Municipality system.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-logo"><img src="assets/img/logos/al-sabq.jpg" alt="SATC, Al Sabq Al Arabi logo" width="64" height="64" loading="lazy"></div>
+          <div>
+            <div class="job-head">
+              <div>
+                <h3>GIS Specialist</h3>
+                <p class="job-company">SATC, Al Sabq Al Arabi Trading &amp; Contracting</p>
+              </div>
+              <div class="job-meta">
+                <span class="pill"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Aug 2021 – Jan 2023</span>
+                <span>1 yr 6 mos · Jeddah, Saudi Arabia</span>
+              </div>
+            </div>
+            <span class="client">Client: <b>National Water Company (NWC)</b></span>
+
+            <div class="project">
+              <h4>Eisal Project: water and sewerage house connections, Jeddah</h4>
+              <p>Supervised and followed up the delivery of more than 1,200 domestic water connections across Jeddah.</p>
+              <ul class="bullets">
+                <li>Creating the project's GIS data.</li>
+                <li>Surveying executed works with GPS.</li>
+                <li>Preparing reports for the company and the National Water Company.</li>
+                <li>Conducting field surveys with National Water Company representatives.</li>
+                <li>Issuing and closing permits on the Jeddah Municipality system.</li>
+                <li>Organising work sites and sending locations, photos and permits to field teams.</li>
+                <li>Closing transactions on the National Water Company EAM system.</li>
+              </ul>
+            </div>
+            <div class="project">
+              <h4>Contract No. 18A: house sewerage connections, Al-Basateen District (1), Jeddah</h4>
+              <ul class="bullets">
+                <li>Creating the project's GIS data.</li>
+                <li>Preparing reports for the company and the National Water Company.</li>
+                <li>Surveying executed works with GPS.</li>
+                <li>Issuing and closing permits on the Jeddah Municipality system.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-logo"><img src="assets/img/logos/al-sabq.jpg" alt="SATC, Al Sabq Al Arabi logo" width="64" height="64" loading="lazy"></div>
+          <div>
+            <div class="job-head">
+              <div>
+                <h3>Professional Land Surveyor</h3>
+                <p class="job-company">SATC, Al Sabq Al Arabi Trading &amp; Contracting</p>
+              </div>
+              <div class="job-meta">
+                <span class="pill"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Jan 2021 – Jul 2021</span>
+                <span>7 mos · Taif, Saudi Arabia</span>
+              </div>
+            </div>
+
+            <div class="project">
+              <h4>Contract No. 7: completion of the sewage networks for Al-Qiyam and Ibn Rayhan in Al-Hulaqa and Al-Rahmaniyah, Taif</h4>
+              <ul class="bullets">
+                <li>Field surveying of the project with GPS.</li>
+                <li>Preparing survey reports and following up with the technical office.</li>
+                <li>Handing survey works over to the consultant for approval.</li>
+                <li>Design, drafting and revisions in AutoCAD Civil 3D.</li>
+                <li>Excavation and laying of sewer pipelines of 200, 300, 600 and 1200 mm diameter.</li>
+                <li>House sewer connection works.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-logo"><img src="assets/img/logos/ecip.jpg" alt="ECIP logo" width="64" height="64" loading="lazy"></div>
+          <div>
+            <div class="job-head">
+              <div>
+                <h3>Land Surveyor</h3>
+                <p class="job-company">Engineering Company for Integrated Projects (ECIP)</p>
+              </div>
+              <div class="job-meta">
+                <span class="pill"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>2018 – 2020</span>
+                <span>2 yrs · Cairo, Egypt</span>
+              </div>
+            </div>
+
+            <div class="project">
+              <h4>Chipsy Phase 3 project, Al Obour City</h4>
+              <ul class="bullets">
+                <li>Analysed previous maps, physical evidence and other documents.</li>
+                <li>Collected land survey data with a total station.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-logo monogram" aria-hidden="true">CC</div>
+          <div>
+            <div class="job-head">
+              <div>
+                <h3>Land Surveyor</h3>
+                <p class="job-company">Cairo Consulting Company</p>
+              </div>
+              <div class="job-meta">
+                <span class="pill"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>2017 – 2018</span>
+                <span>1 yr · Cairo, Egypt</span>
+              </div>
+            </div>
+
+            <div class="project">
+              <h4>Transport links for the Beit Al Watan project, Al Rehab</h4>
+              <ul class="bullets">
+                <li>Performed conventional surveying with a level and total station.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="band quote" aria-label="Quote">
+    <div class="band-bg" aria-hidden="true"></div>
+    <div class="container reveal">
+      <blockquote><span class="quote-mark" aria-hidden="true">“</span>Knowing where things are, and why, is essential to rational decision making.</blockquote>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">04 — Skills</span>
+        <h2>Tools &amp; expertise</h2>
+        <p>Tell me and I forget. Teach me and I remember. Involve me and I learn.</p>
+      </div>
+
+      <div class="skill-groups">
+        <div class="skill-group reveal">
+          <h3><svg class="icon" aria-hidden="true"><use href="#i-map"/></svg>GIS &amp; mapping</h3>
+          <ul class="tags">
+            <li class="core">ArcGIS Pro</li><li class="core">ArcMap</li><li>ArcGIS Online</li><li>QGIS</li>
+            <li>Spatial analysis</li><li>Cartography</li><li>Asset data management</li><li>Google Earth Pro</li><li>Google Maps</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal" style="--d:.1s">
+          <h3><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg>Surveying</h3>
+          <ul class="tags">
+            <li>GPS / GNSS</li><li>Total station</li><li>Levelling</li><li>As-built surveys</li><li>Setting out</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg>CAD &amp; project tools</h3>
+          <ul class="tags">
+            <li class="core">AutoCAD Civil 3D</li><li>AutoCAD</li><li>Autodesk Revit</li><li>Primavera P6</li><li>Shop &amp; as-built drawings</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal" style="--d:.1s">
+          <h3><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>Data &amp; programming</h3>
+          <ul class="tags">
+            <li>Python</li><li>HTML &amp; CSS</li><li>Data management</li><li>Data analysis</li>
+            <li>Data visualization</li><li>Data entry</li><li>Microsoft Office</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="languages reveal">
+        <div class="lang"><strong>Arabic</strong><span>Native</span></div>
+        <div class="lang"><strong>English</strong><span>Professional working</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">05 — Education</span>
+        <h2>Academic background</h2>
+      </div>
+
+      <article class="edu reveal from-side">
+        <img src="assets/img/logos/mansoura-university.jpg" alt="Mansoura University logo" width="96" height="96" loading="lazy">
+        <div>
+          <h3>Bachelor of Arts (B.A.): Geographic Information Systems &amp; Surveying Engineering</h3>
+          <p>Faculty of Arts, Mansoura University, Egypt</p>
+          <span class="pill"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>2010 – 2014</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">06 — Certifications</span>
+        <h2>Licenses &amp; certifications</h2>
+        <p>17 courses from Esri Training and LinkedIn Learning. Swipe through them, tap one to view it full size, or verify it at the source.</p>
+      </div>
+    </div>
+
+    <div class="carousel reveal" data-carousel>
+      <div class="carousel-track" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Certificates">
+
+        <figure class="slide">
+          <div class="slide-card">
+            <div class="slide-art" aria-hidden="true">
+              <svg class="icon"><use href="#i-globe"/></svg>
+              <strong>GIS for Climate Action</strong>
+            </div>
+            <figcaption class="slide-body">
+              <h3>GIS for Climate Action</h3>
+              <div class="slide-meta"><span class="issuer"><i></i>Esri MOOC</span></div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="slide" data-full="assets/img/certs/full/esri-aec-gis-bim.jpg">
+          <div class="slide-card">
+            <button class="slide-media" type="button" aria-label="View full size: Transform AEC Projects with GIS and BIM"><img src="assets/img/certs/esri-aec-gis-bim.jpg" alt="" width="640" height="448" loading="lazy"><span class="zoom"><svg class="icon"><use href="#i-zoom"/></svg></span></button>
+            <figcaption class="slide-body">
+              <h3>Transform AEC Projects with GIS and BIM</h3>
+              <div class="slide-meta"><span class="issuer"><i></i>Esri · May 2023</span><a class="verify" href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/6415757fedba702d87a7ad0e/-180" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="slide" data-full="assets/img/certs/full/esri-cartography.jpg">
+          <div class="slide-card">
+            <button class="slide-media" type="button" aria-label="View full size: Cartography"><img src="assets/img/certs/esri-cartography.jpg" alt="" width="640" height="451" loading="lazy"><span class="zoom"><svg class="icon"><use href="#i-zoom"/></svg></span></button>
+            <figcaption class="slide-body">
+              <h3>Cartography</h3>
+              <div class="slide-meta"><span class="issuer"><i></i>Esri · Apr 2023</span><a class="verify" href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/63df55fd5b71755a053a9aa0/-180" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="slide" data-full="assets/img/certs/full/esri-spatial-analysis.jpg">
+          <div class="slide-card">
+            <button class="slide-media" type="button" aria-label="View full size: Going Places with Spatial Analysis"><img src="assets/img/certs/esri-spatial-analysis.jpg" alt="" width="640" height="449" loading="lazy"><span class="zoom"><svg class="icon"><use href="#i-zoom"/></svg></span></button>
+            <figcaption class="slide-body">
+              <h3>Going Places with Spatial Analysis</h3>
+              <div class="slide-meta"><span class="issuer"><i></i>Esri · Mar 2023</span><a class="verify" href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/6390951d25163e1d9454fcb6/-180" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="slide" data-full="assets/img/certs/full/linkedin-advance-gis.jpg">
+          <div class="slide-card">
+            <button class="slide-media" type="button" aria-label="View full size: Advance Your Skills in GIS"><img src="assets/img/certs/linkedin-advance-gis.jpg" alt="" width="640" height="495" loading="lazy"><span class="zoom"><svg class="icon"><use href="#i-zoom"/></svg></span></button>
+            <figcaption class="slide-body">
+              <h3>Advance Your Skills in GIS (Learning Path)</h3>
+              <div class="slide-meta"><span class="issuer linkedin"><i></i>LinkedIn Learning · Feb 2023</span><a class="verify" href="https://www.linkedin.com/learning/certificates/d029bc779ed6a73dc43bb9cc4e2e9990a4ba068d8ff9ee415314bff4190af428" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="slide" data-full="assets/img/certs/full/linkedin-civil-3d.jpg">
+          <div class="slide-card">
+            <button class="slide-media" type="button" aria-label="View full size: Autodesk Civil 3D 2020 Essential Training"><img src="assets/img/certs/linkedin-civil-3d.jpg" alt="" width="640" height="497" loading="lazy"><span class="zoom"><svg class="icon"><use href="#i-zoom"/></svg></span></button>
+            <figcaption class="slide-body">
+              <h3>Autodesk Civil 3D 2020 Essential Training</h3>
+              <div class="slide-meta"><span class="issuer linkedin"><i></i>LinkedIn Learning · Feb 2023</span><a class="verify" href="https://www.linkedin.com/learning/certificates/83dda400413fe441f6148bbbb88a4eb209164b723f3701caebbe9496640822e2" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="slide" data-full="assets/img/certs/full/linkedin-infraworks-arcgis.jpg">
+          <div class="slide-card">
+            <button class="slide-media" type="button" aria-label="View full size: InfraWorks and ArcGIS: AEC Collaboration"><img src="assets/img/certs/linkedin-infraworks-arcgis.jpg" alt="" width="640" height="494" loading="lazy"><span class="zoom"><svg class="icon"><use href="#i-zoom"/></svg></span></button>
+            <figcaption class="slide-body">
+              <h3>InfraWorks and ArcGIS: AEC Collaboration</h3>
+              <div class="slide-meta"><span class="issuer linkedin"><i></i>LinkedIn Learning · Feb 2023</span><a class="verify" href="https://www.linkedin.com/learning/certificates/75d35b7c35b60912d660602884a80b73d87e9b69b21f5618a5ca55a10dd1e6f0" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="slide" data-full="assets/img/certs/full/linkedin-arcgis-pro.jpg">
+          <div class="slide-card">
+            <button class="slide-media" type="button" aria-label="View full size: ArcGIS Pro Essential Training"><img src="assets/img/certs/linkedin-arcgis-pro.jpg" alt="" width="640" height="496" loading="lazy"><span class="zoom"><svg class="icon"><use href="#i-zoom"/></svg></span></button>
+            <figcaption class="slide-body">
+              <h3>ArcGIS Pro Essential Training</h3>
+              <div class="slide-meta"><span class="issuer linkedin"><i></i>LinkedIn Learning · Jan 2023</span><a class="verify" href="https://www.linkedin.com/learning/certificates/e8a2b5eea43c152c7a9a67165b239ff19fe08cf5a74c48a89ea58e487cfb3d67" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="slide" data-full="assets/img/certs/full/linkedin-gis-foundations.jpg">
+          <div class="slide-card">
+            <button class="slide-media" type="button" aria-label="View full size: Foundations of Geographic Information Systems (GIS)"><img src="assets/img/certs/linkedin-gis-foundations.jpg" alt="" width="640" height="496" loading="lazy"><span class="zoom"><svg class="icon"><use href="#i-zoom"/></svg></span></button>
+            <figcaption class="slide-body">
+              <h3>Foundations of Geographic Information Systems (GIS)</h3>
+              <div class="slide-meta"><span class="issuer linkedin"><i></i>LinkedIn Learning · Jan 2023</span><a class="verify" href="https://www.linkedin.com/learning/certificates/cde242ea05626d5af2987ebc73d5446bfa904ea3212e435e34be837833c2589e" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="slide" data-full="assets/img/certs/full/esri-racial-equity-workflow.jpg">
+          <div class="slide-card">
+            <button class="slide-media" type="button" aria-label="View full size: Applying the Racial Equity Workflow Using ArcGIS"><img src="assets/img/certs/esri-racial-equity-workflow.jpg" alt="" width="640" height="451" loading="lazy"><span class="zoom"><svg class="icon"><use href="#i-zoom"/></svg></span></button>
+            <figcaption class="slide-body">
+              <h3>Applying the Racial Equity Workflow Using ArcGIS</h3>
+              <div class="slide-meta"><span class="issuer"><i></i>Esri · Nov 2022</span><a class="verify" href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/6374906b1de6b14fe11be29c/-180" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="slide" data-full="assets/img/certs/full/esri-getting-started-arcgis-pro.jpg">
+          <div class="slide-card">
+            <button class="slide-media" type="button" aria-label="View full size: Getting Started with ArcGIS Pro"><img src="assets/img/certs/esri-getting-started-arcgis-pro.jpg" alt="" width="640" height="449" loading="lazy"><span class="zoom"><svg class="icon"><use href="#i-zoom"/></svg></span></button>
+            <figcaption class="slide-body">
+              <h3>Getting Started with ArcGIS Pro</h3>
+              <div class="slide-meta"><span class="issuer"><i></i>Esri · Nov 2022</span><a class="verify" href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/6360b4157c09015d185a9bd6/-180" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="slide" data-full="assets/img/certs/full/esri-getting-started-gis.jpg">
+          <div class="slide-card">
+            <button class="slide-media" type="button" aria-label="View full size: Getting Started with GIS"><img src="assets/img/certs/esri-getting-started-gis.jpg" alt="" width="640" height="448" loading="lazy"><span class="zoom"><svg class="icon"><use href="#i-zoom"/></svg></span></button>
+            <figcaption class="slide-body">
+              <h3>Getting Started with GIS</h3>
+              <div class="slide-meta"><span class="issuer"><i></i>Esri · Oct 2022</span><a class="verify" href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/635e341e4f02f9290a8fcacf/-180" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="slide" data-full="assets/img/certs/full/esri-mapping-visualization.jpg">
+          <div class="slide-card">
+            <button class="slide-media" type="button" aria-label="View full size: Getting Started with Mapping and Visualization"><img src="assets/img/certs/esri-mapping-visualization.jpg" alt="" width="640" height="454" loading="lazy"><span class="zoom"><svg class="icon"><use href="#i-zoom"/></svg></span></button>
+            <figcaption class="slide-body">
+              <h3>Getting Started with Mapping and Visualization</h3>
+              <div class="slide-meta"><span class="issuer"><i></i>Esri · Oct 2022</span><a class="verify" href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/635637c537a27142de87b515/-180" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="slide" data-full="assets/img/certs/full/esri-data-management.jpg">
+          <div class="slide-card">
+            <button class="slide-media" type="button" aria-label="View full size: Getting Started with Data Management"><img src="assets/img/certs/esri-data-management.jpg" alt="" width="640" height="452" loading="lazy"><span class="zoom"><svg class="icon"><use href="#i-zoom"/></svg></span></button>
+            <figcaption class="slide-body">
+              <h3>Getting Started with Data Management</h3>
+              <div class="slide-meta"><span class="issuer"><i></i>Esri · Oct 2022</span><a class="verify" href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/63562519a8dc07564c7da3d5/-180" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="slide" data-full="assets/img/certs/full/esri-arcgis-pro-basics.jpg">
+          <div class="slide-card">
+            <button class="slide-media" type="button" aria-label="View full size: ArcGIS Pro Basics"><img src="assets/img/certs/esri-arcgis-pro-basics.jpg" alt="" width="640" height="453" loading="lazy"><span class="zoom"><svg class="icon"><use href="#i-zoom"/></svg></span></button>
+            <figcaption class="slide-body">
+              <h3>ArcGIS Pro Basics</h3>
+              <div class="slide-meta"><span class="issuer"><i></i>Esri · Oct 2022</span><a class="verify" href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/6354e2e2a8dc07564c7269b2/-180" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="slide" data-full="assets/img/certs/full/esri-arcgis-online-basics.jpg">
+          <div class="slide-card">
+            <button class="slide-media" type="button" aria-label="View full size: ArcGIS Online Basics"><img src="assets/img/certs/esri-arcgis-online-basics.jpg" alt="" width="640" height="452" loading="lazy"><span class="zoom"><svg class="icon"><use href="#i-zoom"/></svg></span></button>
+            <figcaption class="slide-body">
+              <h3>ArcGIS Online Basics</h3>
+              <div class="slide-meta"><span class="issuer"><i></i>Esri · Oct 2022</span><a class="verify" href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/6353a8b7a8dc07564c6966c4/-180" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure class="slide" data-full="assets/img/certs/full/esri-gis-basics.jpg">
+          <div class="slide-card">
+            <button class="slide-media" type="button" aria-label="View full size: GIS Basics"><img src="assets/img/certs/esri-gis-basics.jpg" alt="" width="640" height="452" loading="lazy"><span class="zoom"><svg class="icon"><use href="#i-zoom"/></svg></span></button>
+            <figcaption class="slide-body">
+              <h3>GIS Basics</h3>
+              <div class="slide-meta"><span class="issuer"><i></i>Esri · Oct 2022</span><a class="verify" href="https://www.esri.com/training/TrainingRecord/Certificate/sohaib.elsayad/633a9617660df83f2d69c877/-180" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+            </figcaption>
+          </div>
+        </figure>
+
+      </div>
+
+      <div class="carousel-controls">
+        <button class="carousel-btn carousel-prev" type="button" aria-label="Previous certificate"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg></button>
+        <div class="dots"></div>
+        <span class="carousel-count" aria-live="polite">01 / 17</span>
+        <button class="carousel-btn carousel-next" type="button" aria-label="Next certificate"><svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></button>
+      </div>
+      <p class="carousel-hint">Swipe or drag · use the arrow keys</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="band contact" id="contact">
+    <div class="band-bg" aria-hidden="true"></div>
+    <div class="container contact-grid">
+      <div class="reveal from-side">
+        <span class="eyebrow">07 — Contact</span>
+        <h2>Let's work together</h2>
+        <p class="contact-lead">Have a GIS, surveying or technical office role in mind? Send a message below, or reach me directly on WhatsApp, email or LinkedIn.</p>
+
+        <div class="quick">
+          <a href="https://wa.me/966567626056?text=Hello%20Sohaib%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch." target="_blank" rel="noopener">
+            <span class="quick-icon" style="--c:#25d366"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+            <span><small>WhatsApp</small><strong class="ltr">+966 56 762 6056</strong></span>
+          </a>
+          <a href="tel:+966567626056">
+            <span class="quick-icon" style="--c:#0d6b66"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+            <span><small>Call</small><strong class="ltr">+966 56 762 6056</strong></span>
+          </a>
+          <a class="wide" href="mailto:sohaib.elsayad1@gmail.com?subject=Hello%20Sohaib">
+            <span class="quick-icon" style="--c:#e0892b"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <span><small>Email</small><strong>sohaib.elsayad1@gmail.com</strong></span>
+          </a>
+          <a class="wide" href="https://www.linkedin.com/in/sohaib-elsayyad-061043327" target="_blank" rel="noopener">
+            <span class="quick-icon" style="--c:#0a66c2"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></span>
+            <span><small>LinkedIn</small><strong>Send a message</strong></span>
+          </a>
+        </div>
+      </div>
+
+      <form class="form reveal" style="--d:.15s" id="contact-form"
+            action="https://formsubmit.co/sohaib.elsayad1@gmail.com" method="POST"
+            data-ajax="https://formsubmit.co/ajax/sohaib.elsayad1@gmail.com"
+            data-ok="Thanks! Your message has been sent. I'll get back to you soon."
+            data-err="Couldn't send right now. Opening your email app instead…">
+        <h3>Send a message</h3>
+        <p>It goes straight to my inbox.</p>
+
+        <input type="hidden" name="_subject" value="New message from your portfolio website">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="f-name">Name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required placeholder="you@company.com">
+          </div>
+          <div class="field full">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" required placeholder="Tell me about the role or project…"></textarea>
+          </div>
+        </div>
+
+        <div class="form-foot">
+          <button class="btn btn-primary" type="submit">
+            <svg class="icon send-icon" aria-hidden="true"><use href="#i-send"/></svg>
+            <span class="spinner" aria-hidden="true"></span>
+            Send message
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year">2026</span> Sohaib Elsayyad. All rights reserved.</p>
+    <a href="ar.html" hreflang="ar" lang="ar">النسخة العربية</a>
+  </div>
 </footer>
-<!-- END: Footer -->
 
-<!-- Scroll Top -->
-<div class="scroll-top">
-	<a class="page-scroll" href="#page-top"><span class="ti-angle-up"></span></a>
-</div>
-<!-- END: Scroll Top -->		
+<!-- Certificate viewer -->
+<dialog class="lightbox" id="lightbox" aria-label="Certificate">
+  <button class="carousel-btn lightbox-close" type="button" aria-label="Close"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></button>
+  <figure>
+    <img alt="">
+    <figcaption>
+      <strong class="lightbox-title"></strong>
+      <div class="lightbox-actions">
+        <button class="carousel-btn lightbox-prev" type="button" aria-label="Previous certificate"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg></button>
+        <button class="carousel-btn lightbox-next" type="button" aria-label="Next certificate"><svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></button>
+        <a class="btn btn-primary lightbox-verify" href="#" target="_blank" rel="noopener">Verify<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+      </div>
+    </figcaption>
+  </figure>
+</dialog>
 
-		<!-- javascript plugins -->
-		<script src="js/jquery-1.11.1.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.easing.1.3.min.js"></script>
-		<script src="js/appear.js"></script>
-		<script src="js/bootstrap-progressbar.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.mixitup.min.js"></script>
-		<script src="js/waypoints.min.js"></script>
-		<script src="js/jquery.counterup.min.js"></script>
-		<script src="js/animated-jquery.js"></script>
-		<script src="js/wow.min.js"></script>
-    	<script src="js/custom.js"></script>	
+<a class="wa-float" href="https://wa.me/966567626056?text=Hello%20Sohaib%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+</a>
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+</a>
+
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>

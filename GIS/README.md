@@ -1,1 +1,0 @@
-# sohaibelsayyad.github.io
