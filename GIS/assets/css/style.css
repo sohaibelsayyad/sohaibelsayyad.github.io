@@ -640,7 +640,7 @@ ul {
 .gis-visual {
   position: relative;
   width: 100%;
-  max-width: 480px;
+  max-width: 560px;
   margin-inline: auto;
   padding: 28px;
 }
@@ -689,6 +689,7 @@ ul {
 }
 
 .gis-card img {
+  width: 100%;
   border-radius: 14px;
 }
 
@@ -722,59 +723,49 @@ ul {
   background: var(--c, var(--primary));
 }
 
+/* chips sit around the overview drawing without covering its key parts */
 .chip-1 {
-  top: 6%;
-  inset-inline-start: -2%;
+  top: 20%;
+  inset-inline-start: -4%;
   --c: #2f80ed;
   animation-delay: -1s;
 }
 
 .chip-2 {
-  top: 44%;
+  top: 54%;
   inset-inline-end: -4%;
-  --c: var(--accent);
+  --c: #cc2927;
   animation-delay: -3s;
 }
 
 .chip-3 {
-  bottom: 4%;
+  bottom: 3%;
   inset-inline-start: 6%;
-  --c: #22a06b;
+  --c: #0696d7;
   animation-delay: -5s;
 }
 
 .chip-4 {
-  top: 2%;
-  inset-inline-end: 4%;
+  top: 3%;
+  inset-inline-end: 12%;
   --c: #3776ab;
   animation-delay: -2s;
 }
 
-/* Web GIS illustration (Services): tool-coloured chips, wider card */
-.webgis {
-  max-width: 580px;
-}
-
-.webgis .gis-card {
-  padding: 14px;
-}
-
-.webgis .chip-1 {
-  top: 2%;
-  inset-inline-start: 0;
+.chip-5 {
+  top: 60%;
+  inset-inline-start: -4%;
   --c: #e8b400;
+  animation-delay: -4s;
 }
 
-.webgis .chip-2 {
-  top: 40%;
-  --c: #cc2927;
-}
-
-.webgis .chip-3 {
-  bottom: 2%;
-  inset-inline-start: 34%;
+.chip-6 {
+  bottom: 5%;
+  inset-inline-end: -2%;
   --c: #f2a900;
+  animation-delay: -6s;
 }
+
 
 @media (max-width: 520px) {
   .chip {
@@ -782,7 +773,13 @@ ul {
     padding: 6px 10px;
   }
 
-  .chip-2 {
+  .chip-1,
+  .chip-5 {
+    inset-inline-start: 0;
+  }
+
+  .chip-2,
+  .chip-6 {
     inset-inline-end: 0;
   }
 }
@@ -961,25 +958,6 @@ ul {
 }
 
 
-/* ---------- Services header: heading beside the Web GIS illustration ---------- */
-
-.services-top {
-  display: grid;
-  gap: 32px;
-  align-items: center;
-  margin-bottom: 48px;
-}
-
-.services-top .section-head {
-  margin-bottom: 0;
-}
-
-@media (min-width: 900px) {
-  .services-top {
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 56px;
-  }
-}
 
 /* ---------- Service cards (tilt + spotlight) ---------- */
 

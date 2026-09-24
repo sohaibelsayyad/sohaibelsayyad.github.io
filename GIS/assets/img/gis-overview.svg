@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 470" role="img" aria-labelledby="t">
-  <title id="t">Web GIS application: layers panel, interactive map, analytics chart and SQL / JavaScript code</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 640" role="img" aria-labelledby="t">
+  <title id="t">GIS overview: data layers, surveying with a total station, a web map application, a spatial database, analytics and code</title>
+  <g transform="translate(90 80)">
   <defs>
     <clipPath id="map"><rect x="150" y="60" width="470" height="340"/></clipPath>
     <g id="pin">
@@ -135,4 +136,36 @@
     <rect x="100" y="410" width="44" height="8" rx="4" fill="#fff" opacity=".6"/>
     <rect x="18" y="428" width="30" height="8" rx="4" fill="#f2c94c"/>
   </g>
+  </g>
+  <!-- GIS layer stack (top left) -->
+  <g stroke="#2d2a3e" stroke-width="3" stroke-linejoin="round">
+    <path d="M18 96l66-30 66 30-66 30z" fill="#2d2a3e" opacity=".12" stroke="none"/>
+    <path d="M12 90l66-30 66 30-66 30z" fill="#7fd0da"/>
+    <path d="M12 66l66-30 66 30-66 30z" fill="#a9c66b"/>
+    <path d="M12 42l66-30 66 30-66 30z" fill="#f2c94c"/>
+    <path d="M40 42l38-17 38 17M52 48l26 12 26-12" fill="none" stroke-width="2" opacity=".55"/>
+  </g>
+  <!-- spatial database (right) -->
+  <g stroke="#2d2a3e" stroke-width="3" stroke-linejoin="round">
+    <path d="M718 196v96c0 11 20 20 44 20s44-9 44-20v-96" fill="#2d2a3e" opacity=".12" stroke="none" transform="translate(6 6)"/>
+    <path d="M712 190v96c0 11 20 20 44 20s44-9 44-20v-96" fill="#0d6b66"/>
+    <path d="M712 222c0 11 20 20 44 20s44-9 44-20M712 254c0 11 20 20 44 20s44-9 44-20" fill="none" stroke="#fff" stroke-width="2.5" opacity=".7"/>
+    <ellipse cx="756" cy="190" rx="44" ry="20" fill="#45b3a8"/>
+    <circle cx="786" cy="236" r="3.5" fill="#f2c94c" stroke="none"/>
+    <circle cx="786" cy="268" r="3.5" fill="#f2c94c" stroke="none"/>
+  </g>
+  <!-- total station on a tripod (bottom) -->
+  <g stroke="#2d2a3e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M422 560l-44 70M422 560l0 74M422 560l44 70" fill="none" stroke-width="5"/>
+    <path d="M398 548h48l-6 14h-36z" fill="#e9a15b"/>
+    <rect x="392" y="486" width="60" height="62" rx="10" fill="#f2c94c"/>
+    <rect x="402" y="498" width="22" height="16" rx="3" fill="#7fd0da"/>
+    <circle cx="436" cy="530" r="6" fill="#fff"/>
+    <path d="M404 486v-14h36v14" fill="#f2c94c"/>
+    <rect x="410" y="452" width="24" height="22" rx="5" fill="#fff"/>
+    <circle cx="422" cy="463" r="6" fill="#0d6b66"/>
+    <path d="M434 463h14" fill="none"/>
+  </g>
+  <!-- measurement beam to the map -->
+  <path d="M422 452c0-40 10-80 40-120" fill="none" stroke="#e0604f" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
 </svg>
