@@ -513,12 +513,19 @@
           return res.json();
         })
         .then(function (json) {
-          if (String(json.success) !== "true") throw new Error(json.message || "failed");
-          statusEl.className = "form-status ok";
-          statusEl.textContent = form.getAttribute("data-ok");
-          form.reset();
+          if (String(json.success) === "true") {
+            statusEl.className = "form-status ok";
+            statusEl.textContent = form.getAttribute("data-ok");
+            form.reset();
+            return;
+          }
+          // The service answered but refused (e.g. form not activated yet):
+          // keep the visitor on the page instead of opening their mail app.
+          statusEl.className = "form-status err";
+          statusEl.textContent = form.getAttribute("data-fail");
         })
         .catch(function () {
+          // Network failure: fall back to the visitor's email app
           statusEl.className = "form-status err";
           statusEl.textContent = form.getAttribute("data-err");
           var body = data.message + "\n\n— " + data.name + " (" + data.email + ")";
