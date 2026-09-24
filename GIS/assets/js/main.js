@@ -506,6 +506,9 @@
 
       fetch(form.getAttribute("data-ajax"), {
         method: "POST",
+        // FormSubmit activates per referring URL; always send just the site origin
+        // so one activation covers both the English and Arabic pages.
+        referrerPolicy: "origin",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(data)
       })
