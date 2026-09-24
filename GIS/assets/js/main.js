@@ -484,7 +484,7 @@
     }
   }
 
-  // ---- Contact form (FormSubmit AJAX, falls back to the user's mail app) ----
+  // ---- Contact form (Web3Forms AJAX, falls back to the user's mail app) ----
   var form = $("#contact-form");
   if (form && window.fetch) {
     var statusEl = $(".form-status", form);
@@ -492,7 +492,7 @@
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      if (form._honey && form._honey.value) return;
+      if (form.botcheck && form.botcheck.checked) return;
 
       var data = {};
       new FormData(form).forEach(function (v, k) {
@@ -506,9 +506,6 @@
 
       fetch(form.getAttribute("data-ajax"), {
         method: "POST",
-        // FormSubmit activates per referring URL; always send just the site origin
-        // so one activation covers both the English and Arabic pages.
-        referrerPolicy: "origin",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(data)
       })
@@ -522,7 +519,7 @@
             form.reset();
             return;
           }
-          // The service answered but refused (e.g. form not activated yet):
+          // The service answered but refused the message:
           // keep the visitor on the page instead of opening their mail app.
           statusEl.className = "form-status err";
           statusEl.textContent = form.getAttribute("data-fail");
@@ -534,7 +531,7 @@
           var body = data.message + "\n\n— " + data.name + " (" + data.email + ")";
           window.location.href =
             "mailto:sohaib.elsayad1@gmail.com?subject=" +
-            encodeURIComponent(data._subject || "Portfolio") +
+            encodeURIComponent(data.subject || "Portfolio") +
             "&body=" + encodeURIComponent(body);
         })
         .then(function () {
